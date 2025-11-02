@@ -1,5 +1,6 @@
 ---
 layout: single
+author_profile: false
 title: "Test Post"
 date: 2024-11-02
 categories: 
