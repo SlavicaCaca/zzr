@@ -4,6 +4,7 @@ search: false
 ---
 
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -108,3 +109,25 @@ a {
     background-color: #60003b;
   }
 }
+/* Apply Montserrat to everything */
+body,
+html {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.page__title,
+.archive__item-title,
+.nav__title,
+button,
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Hide "Recent posts" heading
+h3.archive__subtitle {
+  display: none;
+}
+
+// Your custom colors (add your existing color styles here too)
