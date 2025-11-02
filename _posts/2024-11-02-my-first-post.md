@@ -10,8 +10,8 @@ tags:
   - activism
 excerpt: "A short description of your post that appears in previews"
 header:
-  image: /assets/images/post-image.jpg
-  teaser: /assets/images/post-teaser.jpg
+  image: /assets/images/gin.png
+  teaser: /assets/images/gin.png
 ---
 
 Your post content goes here. You can use Markdown formatting.
