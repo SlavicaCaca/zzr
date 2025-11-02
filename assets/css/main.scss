@@ -34,3 +34,74 @@ search: false
     transform: translateY(-5px);
   }
 }
+
+/* Custom color overrides */
+:root {
+  --primary: #ba5a87;
+  --secondary: #60003b;
+}
+
+// Logo fix
+.site-logo img {
+  background: transparent !important;
+}
+
+// Masthead styling
+.masthead {
+  background-color: #fff;
+  border-bottom: 2px solid #ba5a87;
+  
+  .site-title {
+    color: #60003b !important;
+  }
+  
+  .greedy-nav a {
+    color: #60003b;
+    
+    &:hover {
+      color: #ba5a87;
+    }
+  }
+}
+
+// Page titles
+.page__title {
+  color: #60003b;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #60003b;
+}
+
+// Links
+a {
+  color: #ba5a87;
+  
+  &:hover {
+    color: #60003b;
+  }
+}
+
+// Archive items (blog post cards)
+.archive__item {
+  border: 1px solid rgba(186, 90, 135, 0.2);
+  
+  &:hover {
+    border-color: #ba5a87;
+  }
+  
+  .archive__item-title {
+    color: #60003b;
+  }
+}
+
+// Buttons
+.btn {
+  background-color: #ba5a87;
+  color: #fff;
+  
+  &:hover {
+    background-color: #60003b;
+  }
+}
