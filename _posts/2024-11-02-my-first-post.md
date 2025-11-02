@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Your Post Title Here"
+title: "Test Post"
 date: 2024-11-02
 categories: 
   - feminism
