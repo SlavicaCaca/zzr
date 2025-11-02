@@ -5,5 +5,35 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Custom styles
+.masthead {
+  background-color: #f5f0e8;
+  border-bottom: 1px solid #e0d5c7;
+}
+
+.site-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #4a1f1f;
+}
+
+.page__title {
+  font-size: 3em;
+  font-weight: 700;
+  color: #4a1f1f;
+  margin-bottom: 1em;
+}
+
+// Grid layout for articles
+.archive__item {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
