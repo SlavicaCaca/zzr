@@ -11,7 +11,6 @@ tags:
   - activism
 excerpt: "A short description of your post that appears in previews"
 header:
-  image: /assets/images/gin.png
   teaser: /assets/images/gin.png
 ---
 
