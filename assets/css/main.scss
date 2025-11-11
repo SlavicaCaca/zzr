@@ -78,10 +78,14 @@ search: false
   }
 }
 
-.page {
-  @include breakpoint($x-large) {
-    max-width: 1400px;  // bilo 1280px
-  }
+// Ukloni sidebar prostor na home page-u kada nema author_profile
+.layout--home .sidebar {
+  display: none;
+}
+
+.layout--home .archive {
+  width: 100%;
+  padding-right: 0;
 }
 
 .greedy-nav a.site-title {
