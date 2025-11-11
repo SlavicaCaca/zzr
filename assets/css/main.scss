@@ -196,3 +196,8 @@ h3.archive__subtitle {
 .grid--item {
   width: 16em;
 }
+
+// Teaser slika na pocetnoh
+.grid__item .archive__item-teaser {
+   max-height: 100%;
+ }
