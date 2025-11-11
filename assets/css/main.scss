@@ -56,10 +56,12 @@ search: false
   .site-title {
     color: #60003b !important;
   }
-  
+
+  .greedy-nav {
+     background-color: #E8E9EB;
+  }
   .greedy-nav a {
     color: #60003b;
-    background-color: #E8E9EB;
     
     &:hover {
       color: #ba5a87;
