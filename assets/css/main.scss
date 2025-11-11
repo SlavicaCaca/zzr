@@ -78,6 +78,11 @@ search: false
   }
 }
 
+.page {
+  @include breakpoint($x-large) {
+    max-width: 1400px;  // bilo 1280px
+  }
+}
 
 .greedy-nav a.site-title {
     margin-inline-start: 23px;}
