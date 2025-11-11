@@ -223,12 +223,3 @@ h3.archive__subtitle {
   opacity: 0.95;
 }
 
-// U main.scss - zameni tekst
-.page__footer-follow .label {
-  font-size: 0; // Sakrij originalni tekst
-  
-  &::before {
-    content: "Pratite nas:";
-    font-size: 1rem;
-  }
-}
