@@ -40,7 +40,7 @@ search: false
 :root {
   --primary: #ba5a87;
   --secondary: #60003b;
-  --background: #FFECD1;
+  --background: #E8E9EB;
 }
 
 // Logo fix
@@ -59,6 +59,7 @@ search: false
   
   .greedy-nav a {
     color: #60003b;
+    background-color: #E8E9EB;
     
     &:hover {
       color: #ba5a87;
@@ -66,8 +67,6 @@ search: false
   }
 }
 
-.masthead__inner-wrap { 
-  background-color: #E8E9EB;}
 
 .greedy-nav a.site-title {
     margin-inline-start: 23px;}
