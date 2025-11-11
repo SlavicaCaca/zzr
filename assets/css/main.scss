@@ -223,6 +223,7 @@ h3.archive__subtitle {
   opacity: 0.95;
 }
 
-.entries-grid {
-  grid-gap: 2em;        // Razmak između svih itema
+.grid__item {
+  width: 16em;
+  margin: 1.5em; // Razmak sa svih strana (gore, dole, levo, desno)
 }
