@@ -156,16 +156,13 @@ h3.archive__subtitle {
 .archive__item {
   border: 13px solid #ba5a87;
   border-radius: 1em;
-  .archive__item-title {
-    color: #60003b;
-  }
 }
 
 // Stilizovanje grid kartica na home stranici
 .archive__item-title {
+  color: #60003b;
   text-align: center;
-  margin: 15;
-  margin-bottom: 2em;
+  margin: 0.5em;
   padding: 15px 20px;
   background-color: #60003b; // Plava - promeni boju po želji
   border-radius: 50px; // Zaobljeni uglovi
