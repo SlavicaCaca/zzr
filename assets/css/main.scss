@@ -117,15 +117,6 @@ a {
   }
 }
 
-// Archive items (blog post cards)
-.archive__item {
-  border: 13px solid #ba5a87;
-  border-radius: 10px;
-  .archive__item-title {
-    color: #60003b;
-  }
-}
-
 // Buttons
 .btn {
   background-color: #ba5a87;
@@ -172,10 +163,20 @@ h3.archive__subtitle {
   background: #ba5a87;
 }
 
+// Archive items (blog post cards)
+.archive__item {
+  border: 13px solid #ba5a87;
+  border-radius: 10px;
+  .archive__item-title {
+    color: #60003b;
+  }
+}
+
 // Stilizovanje grid kartica na home stranici
 .archive__item-title {
   text-align: center;
   margin: 15;
+  margin-bottom: 2em;
   padding: 15px 20px;
   background-color: #60003b; // Plava - promeni boju po želji
   border-radius: 50px; // Zaobljeni uglovi
@@ -191,11 +192,6 @@ h3.archive__subtitle {
       text-decoration: none;
     }
   }
-}
-
-// Opciono: dodaj malo prostora oko kartice
-.archive__item {
-  margin-bottom: 2em;
 }
 
 // Opciono: shadow efekat za lepši izgled
