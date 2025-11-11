@@ -160,3 +160,17 @@ h3.archive__subtitle {
 }
 
 // Your custom colors (add your existing color styles here too)
+
+// Ili ako želiš da promeniš samo linije hamburger menija
+.greedy-nav__toggle div,
+.greedy-nav__toggle div::before,
+.greedy-nav__toggle div::after {
+  background: #60003b; // Boja linija
+}
+
+// Hover efekat za linije
+.greedy-nav__toggle:hover div,
+.greedy-nav__toggle:hover div::before,
+.greedy-nav__toggle:hover div::after {
+  background: #ba5a87;
+}
