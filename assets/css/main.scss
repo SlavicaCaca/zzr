@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 // Links
 a {
   color: #ba5a87;
-  
+  text-decoration: none;
   &:hover {
     color: #60003b;
   }
@@ -109,7 +109,6 @@ a {
   
   .archive__item-title {
     color: #60003b;
-    text-decoration: none;
   }
 }
 
