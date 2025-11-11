@@ -173,3 +173,40 @@ h3.archive__subtitle {
 .greedy-nav__toggle:hover div::after {
   background: #ba5a87;
 }
+
+// Stilizovanje grid kartica na home stranici
+.archive__item-title {
+  text-align: center;
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #4a90e2; // Plava - promeni boju po želji
+  border-radius: 10px; // Zaobljeni uglovi
+  color: #ffffff; // Bela boja teksta
+  
+  // Link unutar naslova
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    
+    &:hover {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+  }
+}
+
+// Opciono: dodaj malo prostora oko kartice
+.archive__item {
+  margin-bottom: 2em;
+}
+
+// Opciono: shadow efekat za lepši izgled
+.archive__item-title {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
