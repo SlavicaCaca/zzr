@@ -223,13 +223,9 @@ h3.archive__subtitle {
   opacity: 0.95;
 }
 
-.grid__item {
-  width: 14em;
-  margin: 1em; // Razmak sa svih strana (gore, dole, levo, desno)
-}
 
 .grid__item {
-  width: 16em;
+  width: 18em;
   margin-bottom: 1em; // Mali ekrani
   
   @include breakpoint($medium) {
