@@ -11,7 +11,7 @@ tags:
   - activism
 excerpt: "Test post"
 header:
-  teaser: /assets/images/2.jpg
+  teaser: /assets/images/2.png
 ---
 
 Your post content goes here. You can use Markdown formatting.
