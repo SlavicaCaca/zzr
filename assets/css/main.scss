@@ -26,7 +26,7 @@ search: false
 }
 
 .page__footer{ 
-  background-color: #d9c1cc;
+  background-color: #fff;
 }
 // Grid layout for articles
 .archive__item {
@@ -43,7 +43,6 @@ search: false
 :root {
   --primary: #ba5a87;
   --secondary: #60003b;
-  --background: #E8E9EB;
 }
 
 // Logo fix
@@ -52,22 +51,22 @@ search: false
   max-height: 6rem;
 }
 .layout--home {
-  background-color: #d9c1cc;
+  background-color: #fff;
 }
 
 .layout--splash {
-  background-color: #d9c1cc;
+  background-color: #fff;
 }
 // Masthead styling
 .masthead {
-  background-color: #d9c1cc;
+  background-color: #fff;
   
   .site-title {
     color: #60003b !important;
   }
 
   .greedy-nav {
-     background-color: #d9c1cc;
+     background-color: #fff;
   }
   .greedy-nav a {
     color: #60003b;
