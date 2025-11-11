@@ -227,3 +227,17 @@ h3.archive__subtitle {
   width: 14em;
   margin: 1em; // Razmak sa svih strana (gore, dole, levo, desno)
 }
+
+.grid__item {
+  width: 16em;
+  margin-bottom: 1em; // Mali ekrani
+  
+  @include breakpoint($medium) {
+    margin-bottom: 2.5em; // Tablet
+  }
+  
+  @include breakpoint($large) {
+    width: 14em;
+    margin-bottom: 3.5em; // Desktop
+  }
+}
