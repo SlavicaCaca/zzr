@@ -11,7 +11,7 @@ tags:
   - activism
 excerpt: "A short description of your post that appears in previews"
 header:
-  teaser: /assets/images/logo.png
+  teaser: /assets/images/fem.jpg
 ---
 
 Your post content goes here. You can use Markdown formatting.
