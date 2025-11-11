@@ -225,6 +225,14 @@ h3.archive__subtitle {
 
 
 .grid__item {
-  width: 270px;
-  margin-bottom: 1em; 
-}
+  width: 22em;
+  margin-bottom: 1em; // Mali ekrani
+  
+  @include breakpoint($medium) {
+    margin-bottom: 2.5em; // Tablet
+  }
+  
+  @include breakpoint($large) {
+    width: 13.5em;
+    //margin-bottom: 3.5em; // Desktop
+  }
