@@ -226,7 +226,7 @@ h3.archive__subtitle {
 
 .grid__item {
   width: 21em;
-  margin-bottom: 1em; // Mali ekrani
+  margin-bottom: 1.5em; // Mali ekrani
   
   @include breakpoint($medium) {
     margin-bottom: 2.5em; // Tablet
