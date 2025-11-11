@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-title: "ginekolosko nasilje"
+title: "Test post"
 date: 2024-11-02
 categories: 
   - feminism
@@ -9,7 +9,7 @@ categories:
 tags:
   - women's rights
   - activism
-excerpt: "ginekolosko nasilje"
+excerpt: "Test post"
 header:
   teaser: /assets/images/fem.jpg
 ---
