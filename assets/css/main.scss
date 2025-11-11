@@ -225,7 +225,7 @@ h3.archive__subtitle {
 
 
 .grid__item {
-  width: 18em;
+  width: 25em;
   margin-bottom: 1em; // Mali ekrani
   
   @include breakpoint($medium) {
@@ -233,7 +233,7 @@ h3.archive__subtitle {
   }
   
   @include breakpoint($large) {
-    width: 14em;
-    margin-bottom: 3.5em; // Desktop
+    width: 13.5em;
+    //margin-bottom: 3.5em; // Desktop
   }
 }
