@@ -6,115 +6,124 @@ search: false
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
 // Custom styles
 .site-title {
   font-size: 1.6em;
   font-weight: 600;
-  color: 
-#4a1f1f;
+  color: #4a1f1f;
 }
+
 .page__title {
   font-size: 3em;
   font-weight: 700;
-  color: 
-#4a1f1f;
+  color: #4a1f1f;
   margin-bottom: 1em;
 }
+
 .page__footer{ 
   background-color: #fff;
 }
+
 /* Custom color overrides */
 :root {
-  --primary: 
-#ba5a87;
-  --secondary: 
-#60003b;
+  --primary: #ba5a87;
+  --secondary: #60003b;
 }
+
 // Logo fix
 .site-logo img {
   background: transparent !important;
   max-height: 6rem;
 }
+
 .layout--home {
   background-color: #fff;
 }
+
 .layout--splash {
   background-color: #fff;
 }
+
 // Masthead styling
 .masthead {
   background-color: #fff;
-
+  
   .site-title {
-    color: 
-#60003b !important;
+    color: #60003b !important;
   }
+  
   .greedy-nav {
-     background-color: #fff;
-  }
-  .greedy-nav a {
-    color: 
-#60003b;
-
-    &:hover {
-      color: 
-#ba5a87;
+    background-color: #fff;
+    
+    a {
+      color: #60003b;
+      
+      &:hover {
+        color: #ba5a87;
+      }
     }
   }
 }
+
 .masthead__inner-wrap {
   padding: 2em;
 }
+
 // Ukloni sidebar prostor na home page-u kada nema author_profile
 .layout--home .sidebar {
   display: none;
 }
+
 .layout--home .archive {
   width: 100%;
 }
+
 // Razmak izmedju logoa i titla
 .greedy-nav a.site-title {
-    margin-inline-start: 1em;
+  margin-inline-start: 1em;
 }
+
 // Page titles
 .page__title {
-  color: 
-#60003b;
+  color: #60003b;
 }
+
 #main {
   padding-inline: 2em;
 }
+
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  color: 
-#60003b;
+  color: #60003b;
 }
+
 // Links
 a {
-  color: 
-#ba5a87;
+  color: #ba5a87;
   text-decoration: none;
+  
   &:hover {
-    color: 
-#60003b;
+    color: #60003b;
   }
 }
+
 // Buttons
 .btn {
-  background-color: 
-#ba5a87;
+  background-color: #ba5a87;
   color: #fff;
-
+  
   &:hover {
-    background-color: 
-#60003b;
+    background-color: #60003b;
   }
 }
+
 /* Apply Montserrat to everything */
 body,
 html {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6,
 .site-title,
 .page__title,
@@ -124,75 +133,92 @@ button,
 .btn {
   font-family: 'Montserrat', sans-serif;
 }
+
 // Hide "Recent posts" heading
 h3.archive__subtitle {
   display: none;
 }
-// Your custom colors (add your existing color styles here too)
+
 // Linije hamburger menija
 .greedy-nav__toggle div,
 .greedy-nav__toggle div::before,
 .greedy-nav__toggle div::after {
-  background: 
-#60003b; // Boja linija
+  background: #60003b;
 }
-// Hover efekat za linije
+
 .greedy-nav__toggle:hover div,
 .greedy-nav__toggle:hover div::before,
 .greedy-nav__toggle:hover div::after {
-  background: 
-#ba5a87;
+  background: #ba5a87;
 }
-// Archive items (blog post cards)
+
+// Archive items (blog post cards) - GLAVNE IZMENE OVDE
 .archive__item {
-  border: 13px solid 
-#ba5a87;
+  position: relative;
+  border: 13px solid #ba5a87;
   border-radius: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+  // Spreči treperenje
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-// Stilizovanje grid kartica na home stranici
+
+// HOVER NA WRAPPER umesto na sam item - ovo rešava treperenje!
+.grid__item:hover .archive__item {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(186, 90, 135, 0.3);
+}
+
+// Naslov kartice - SPOJENO U JEDAN BLOK
 .archive__item-title {
-  color: 
-#60003b;
+  position: relative;
+  color: #60003b;
   text-align: center;
   margin: 0.5em;
   padding: 7px 8px;
-  background-color: 
-#60003b; // Plava - promeni boju po želji
-  border-radius: 50px; // Zaobljeni uglovi
-  color: 
-#ffffff; // Bela boja teksta
-
-  // Link unutar naslova
+  background-color: #60003b;
+  border-radius: 50px;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  // UKLONIO SAM transition i hover odavde - pravi treperenje!
+  
   a {
-    color: 
-#ffffff;
+    color: #ffffff;
     text-decoration: none;
-
+    
     &:hover {
-      color: 
-#f0f0f0;
+      color: #f0f0f0;
       text-decoration: none;
+    }
+    
+    // Pseudo element da cela kartica bude klikabilna
+    &::before {
+      content: '';
+      position: absolute;
+      top: -999px;
+      left: -999px;
+      right: -999px;
+      bottom: -999px;
+      z-index: 1;
     }
   }
 }
-// Opciono: shadow efekat za lepši izgled
-.archive__item-title {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-}
+// Excerpt tekst
 .archive__item-excerpt {
   margin: 11px;
   text-align: justify;
 }
-.grid__item {
-  width: 16em;
-}
-// Teaser slika na pocetnoh
+
+// Teaser slika na pocetnoj
 .grid__item .archive__item-teaser {
-   max-height: 100%;
- }
+  max-height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+// Blagi hover efekat na slici
+.grid__item:hover .archive__item-teaser {
+  opacity: 0.95;
+}
