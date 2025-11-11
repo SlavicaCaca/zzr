@@ -1,7 +1,6 @@
 ---
 layout: single
 author_profile: true
-title: "Test post"
 date: 2024-11-02
 categories: 
   - feminism
@@ -9,7 +8,6 @@ categories:
 tags:
   - women's rights
   - activism
-excerpt: "Test post"
 header:
   teaser: /assets/images/2.png
 ---
