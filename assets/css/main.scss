@@ -13,7 +13,7 @@ search: false
 
 
 .site-title {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 500;
   color: #4a1f1f;
 }
@@ -78,6 +78,9 @@ search: false
   }
 }
 
+.masthead__inner-wrap {
+  padding: 3em;
+}
 // Ukloni sidebar prostor na home page-u kada nema author_profile
 .layout--home .sidebar {
   display: none;
@@ -89,7 +92,7 @@ search: false
 }
 
 .greedy-nav a.site-title {
-    margin-inline-start: 75px;}
+    margin-inline-start: 49px;}
 
 // Page titles
 .page__title {
