@@ -1,6 +1,6 @@
 ---
 layout: single
-author_profile: false
+author_profile: true
 title: "ginekolosko nasilje"
 date: 2024-11-02
 categories: 
