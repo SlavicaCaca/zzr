@@ -27,7 +27,7 @@ search: false
 
 /* Custom color overrides */
 :root {
-  --primary: #ba5a87;
+  --primary: #ca5e91;
   --secondary: #60003b;
 }
 
@@ -38,23 +38,23 @@ search: false
 }
 
 .layout--home {
-  background-color: #ba5a87;
+  background-color: #ca5e91;
 }
 
 .layout--splash {
-  background-color: #ba5a87;
+  background-color: #ca5e91;
 }
 
 // Masthead styling
 .masthead {
-  background-color: #ba5a87;
+  background-color: #ca5e91;
   
   .site-title {
     color: #60003b !important;
   }
   
   .greedy-nav {
-    background-color: #ba5a87;
+    background-color: #ca5e91;
     
     a {
       color: #fff;
@@ -95,7 +95,7 @@ search: false
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  color: #ba5a87;
+  color: #ca5e91;
 }
 
 // Links
@@ -110,7 +110,7 @@ a {
 
 // Buttons
 .btn {
-  background-color: #ba5a87;
+  background-color: #ca5e91;
   color: #fff;
   
   &:hover {
@@ -149,13 +149,13 @@ h3.archive__subtitle {
 .greedy-nav__toggle:hover div,
 .greedy-nav__toggle:hover div::before,
 .greedy-nav__toggle:hover div::after {
-  background: #ba5a87;
+  background: #ca5e91;
 }
 
 // Archive items (blog post cards) - GLAVNE IZMENE OVDE
 .archive__item {
   position: relative;
-  border: 13px solid #ba5a87;
+  border: 13px solid #ca5e91;
   border-radius: 18px;
   transition: all 0.3s ease;
   cursor: pointer;
