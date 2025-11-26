@@ -4,9 +4,9 @@
     {% include head.html %}
     {% include head/custom.html %}
     <style>
-      /* Inline critical CSS for background */
+      /* Inline critical CSS */
       body {
-        background: linear-gradient(180deg, #d4709a 0%, #c85d8e 50%, #a8497a 100%) !important;
+        background: linear-gradient(180deg, #ca5e91 0%, #8b3968 50%, #60003b 100%) !important;
         margin: 0;
         padding: 0;
       }
@@ -38,28 +38,24 @@
       </div>
       {% endif %}
 
-      <!-- Grid sa karticama -->
+      <!-- Grid sa SAMO slikama (bez naslova/teksta) -->
       <div class="grid-container">
         {% for item in page.gallery_items %}
-        <div class="grid-item {% if item.image == nil %}text-only{% endif %}">
-          {% if item.image %}
-          <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-          {% endif %}
-          
-          <div class="grid-overlay">
-            <h3>{{ item.title }}</h3>
-            {% if item.subtitle %}
-            <p class="item-subtitle">{{ item.subtitle }}</p>
-            {% endif %}
-          </div>
-        </div>
+        <a href="{{ item.link | relative_url }}" class="grid-item">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: 'Slika' }}">
+        </a>
         {% endfor %}
       </div>
 
       <!-- Footer (opciono) -->
       {% if page.show_footer %}
       <div class="page-footer">
-        <div class="footer-follow">FOLLOW: <a href="{{ page.instagram_url }}" target="_blank">📷</a></div>
+        <div class="footer-follow">
+          FOLLOW: 
+          {% if page.instagram_url %}
+          <a href="{{ page.instagram_url }}" target="_blank" rel="noopener">📷</a>
+          {% endif %}
+        </div>
         <div class="footer-copyright">copyright</div>
       </div>
       {% endif %}
