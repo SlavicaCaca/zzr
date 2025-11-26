@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: grid-gallery
 title: "Najopasnije mesto za ženu je njen dom"
 ---
 
