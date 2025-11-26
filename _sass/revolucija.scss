@@ -1,7 +1,4 @@
-// ============================================
-// MONTSERRAT FONT ZA CEO BLOG
-// ============================================
-
+// MONTSERRAT FONT 
 * {
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -55,10 +52,9 @@ body.grid-gallery-active {
 }
 
 // ============================================
-// HEADER SEKCIJA - KAO NA SLICI
+// HEADER SEKCIJA
 // ============================================
 
-// GORNJA ROZE TRAKA SA SUBTITLEOM
 .top-subtitle-bar {
   background: #ca5e91;
   padding: 0.75rem 1rem;
@@ -88,7 +84,7 @@ body.grid-gallery-active {
   justify-content: space-between;
 }
 
-// LOGO - sa linkom
+// LOGO
 .header-logo {
   flex-shrink: 0;
   
@@ -100,15 +96,12 @@ body.grid-gallery-active {
   
   img, svg {
     display: block;
-    width: 4.6rem;
+    width: 5.5rem;
     height: auto;
   }
 }
 
-
-
-
-// NASLOV - PNG SLIKA (VELIKA)
+// NASLOV - PNG 
 .header-title {
   flex-grow: 1;
   text-align: center;
@@ -139,8 +132,7 @@ body.grid-gallery-active {
 }
 
 
-
-// INTRO TEKST (ROZE SEKCIJA)
+// INTRO TEKST 
 .content-intro {
   background: #ca5e91;
   color: #ffffff;
@@ -268,7 +260,7 @@ body.grid-gallery-active {
   
   .header-logo img,
   .header-logo svg {
-    width: 3.5rem;
+    width: 4.2rem;
   }
   
   .header-title img {
@@ -313,7 +305,7 @@ body.grid-gallery-active {
   
   .header-logo img,
   .header-logo svg {
-    width: 2.8rem;
+    width: 3.8rem;
   }
   
   .header-title img {
@@ -356,7 +348,7 @@ body.grid-gallery-active {
   
   .header-logo img,
   .header-logo svg {
-    width: 2.5rem;
+    width: 3.5rem;
   }
   
   .header-title img {
