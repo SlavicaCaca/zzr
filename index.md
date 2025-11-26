@@ -18,22 +18,13 @@ gallery_items:
     link: /clanci/tigray/
     title: "Žene u Tigrayu"
   
-  - image: /assets/images/ko-stiti-zenu.png
+  - image: /assets/images/zenska-prava.png
     link: /clanci/zenska-prava/
     title: "Ženska prava"
   
   # Red 2
-  - image: /assets/images/zenska-prava.png
+  - image: /assets/images/ko-stiti-zenu.png
     link: /clanci/nasilje-u-porodici/
     title: "Nasilje u porodici"
   
-  - image: /assets/images/1.png
-    link: /clanci/tigray/
-    title: "Žene u Tigrayu"
-  
-  - image: /assets/images/2.png
-    link: /clanci/zenska-prava/
-    title: "Ženska prava"
-
-# Možete dodati više slika ovde...
 ---
