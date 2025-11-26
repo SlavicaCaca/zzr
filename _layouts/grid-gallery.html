@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <style>
+      /* Inline critical CSS */
+      body {
+        background: linear-gradient(180deg, #ca5e91 0%, #8b3968 50%, #60003b 100%) !important;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .masthead,
+      .page__footer-follow,
+      .sidebar {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }} grid-gallery-active">
+
+    <div class="grid-gallery-page">
+      
+      <!-- Gornji subtitle (roze traka) -->
+      {% if page.subtitle %}
+      <div class="top-subtitle-bar">
+        <p>{{ page.subtitle }}</p>
+      </div>
+      {% endif %}
+      
+      <!-- Glavni header (tamna sekcija sa logom i naslovom) -->
+      <header class="main-header">
+        <div class="header-container">
+          <!-- Logo -->
+          <!-- Logo -->
+<div class="header-logo">
+  <a href="{{ '/' | relative_url }}" aria-label="Početna stranica">
+    {% if page.logo %}
+    <img src="{{ site.logo | relative_url }}" alt="Logo">
+    {% else %}
+    <!-- Default logo ako nema slike -->
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="20" r="12" fill="#FFB6D9"/>
+      <path d="M30 32 L30 50 M30 50 L25 45 M30 50 L35 45" stroke="#FFB6D9" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    {% endif %}
+  </a>
+</div>
+          
+          <!-- Naslov -->
+          <!-- Naslov - PNG slika -->
+          <div class="header-title">
+            {% if page.title_image %}
+            <img src="{{ page.title_image | relative_url }}" alt="{{ page.title }}">
+            {% else %}
+            <h1>{{ page.title }}</h1>
+            {% endif %}
+          </div>
+          
+          <!-- Hamburger menu (opciono) -->
+          <button class="hamburger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Intro tekst (roze sekcija) -->
+      {% if page.intro %}
+      <div class="content-intro">
+        {{ page.intro }}
+      </div>
+      {% endif %}
+
+      <!-- Grid sa SAMO slikama (bez naslova/teksta) -->
+      <div class="grid-container">
+        {% for item in page.gallery_items %}
+        <a href="{{ item.link | relative_url }}" class="grid-item">
+          <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: 'Slika' }}">
+        </a>
+        {% endfor %}
+      </div>
+
+      <!-- Footer (opciono) -->
+      {% if page.show_footer %}
+      <div class="page-footer">
+        <div class="footer-follow">
+          FOLLOW: 
+          {% if page.instagram_url %}
+          <a href="{{ page.instagram_url }}" target="_blank" rel="noopener">📷</a>
+          {% endif %}
+        </div>
+        <div class="footer-copyright">copyright</div>
+      </div>
+      {% endif %}
+
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
