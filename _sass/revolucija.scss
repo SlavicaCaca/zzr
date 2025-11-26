@@ -100,14 +100,7 @@ body.grid-gallery-active {
   justify-content: center;
   align-items: center;
   
-  img {
-    height: auto;           // Pustite sliku da bude prirodne veličine
-    max-height: none;       // Uklonite ograničenje
-    width: auto;            // Auto širina
-    max-width: 483px;       // Maksimalna širina - povećajte po potrebi
-    display: block;
-    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
-  }
+  
   
   h1 {
     color: #ffffff;
