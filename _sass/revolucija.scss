@@ -49,8 +49,8 @@ body.grid-gallery-active {
   
   p {
     color: rgba(255, 255, 255, 0.95);
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 200;
     font-style: italic;
     margin: 0;
     letter-spacing: 0.3px;
@@ -68,6 +68,7 @@ body.grid-gallery-active {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
+  max-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +102,7 @@ body.grid-gallery-active {
     height: auto;           // Pustite sliku da bude prirodne veličine
     max-height: none;       // Uklonite ograničenje
     width: auto;            // Auto širina
-    max-width: 600px;       // Maksimalna širina - povećajte po potrebi
+    max-width: 483px;       // Maksimalna širina - povećajte po potrebi
     display: block;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
