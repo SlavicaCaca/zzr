@@ -57,11 +57,12 @@ body.grid-gallery-active {
   }
 }
 
-// GLAVNI HEADER (TAMNA SEKCIJA)
+// GLAVNI HEADER (TAMNA SEKCIJA) - FIKSIRANA VISINA
 .main-header {
   background: #60003b;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 1rem;  // Smanjeni padding
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  min-height: 100px;     // Fiksirana minimalna visina
 }
 
 .header-container {
@@ -71,7 +72,7 @@ body.grid-gallery-active {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0; 
+  height: 100%;          // Popuni celu visinu
 }
 
 // LOGO
@@ -85,7 +86,7 @@ body.grid-gallery-active {
   }
 }
 
-// NASLOV - PNG SLIKA
+// NASLOV - PNG SLIKA (VELIKA)
 .header-title {
   flex-grow: 1;
   text-align: center;
@@ -94,12 +95,14 @@ body.grid-gallery-active {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;           // Popuni visinu kontejnera
   
   img {
-    max-height: none;     // Ukloni ograničenje
-    height: 150px;        // Eksplicitna visina - prilagodite po potrebi
+    height: 90px;         // Fiksna visina - povećajte koliko hoćete
     width: auto;
+    max-width: 100%;
     display: block;
+    object-fit: contain;  // Zadržava proporcije
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
   
@@ -112,6 +115,9 @@ body.grid-gallery-active {
     letter-spacing: 1px;
   }
 }
+
+
+  
 // HAMBURGER MENU
 .hamburger-menu {
   flex-shrink: 0;
