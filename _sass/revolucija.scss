@@ -81,9 +81,10 @@ body.grid-gallery-active {
   flex-shrink: 0;
   
   img, svg {
-    width: 60px;
-    height: 60px;
     display: block;
+    width: 124px;
+    height: auto;
+    margin-left: -26px;
   }
 }
 
