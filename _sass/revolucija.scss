@@ -96,10 +96,9 @@ body.grid-gallery-active {
   align-items: center;
   
   img {
-    max-height: 120px;  // Povećajte ovu vrednost koliko želite
-    max-width: 100%;    // Sprečava overflow
+    max-height: none;     // Ukloni ograničenje
+    height: 150px;        // Eksplicitna visina - prilagodite po potrebi
     width: auto;
-    height: auto;
     display: block;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
