@@ -23,15 +23,42 @@
 
     <div class="grid-gallery-page">
       
-      <!-- Header -->
-      <div class="page-header">
-        {% if page.subtitle %}
-        <p class="page-subtitle">{{ page.subtitle }}</p>
-        {% endif %}
-        <h1 class="page-title">{{ page.title }}</h1>
+      <!-- Gornji subtitle (roze traka) -->
+      {% if page.subtitle %}
+      <div class="top-subtitle-bar">
+        <p>{{ page.subtitle }}</p>
       </div>
+      {% endif %}
       
-      <!-- Intro tekst -->
+      <!-- Glavni header (tamna sekcija sa logom i naslovom) -->
+      <header class="main-header">
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="header-logo">
+            {% if page.logo %}
+            <img src="{{ page.logo | relative_url }}" alt="Logo">
+            {% else %}
+            <!-- Default logo ako nema slike -->
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="20" r="12" fill="#FFB6D9"/>
+              <path d="M30 32 L30 50 M30 50 L25 45 M30 50 L35 45" stroke="#FFB6D9" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            {% endif %}
+          </div>
+          
+          <!-- Naslov -->
+          <h1 class="header-title">{{ page.title }}</h1>
+          
+          <!-- Hamburger menu (opciono) -->
+          <button class="hamburger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Intro tekst (roze sekcija) -->
       {% if page.intro %}
       <div class="content-intro">
         {{ page.intro }}
