@@ -224,58 +224,174 @@ body.grid-gallery-active {
   }
 }
 
-// ============================================
-// RESPONSIVNOST
-// ============================================
-
-@media (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .header-logo img,
-  .header-logo svg {
-    width: 50px;
-    height: 50px;
-  }
-    
-    span {
-      width: 25px;
-    }
-  }
-
-
-@media (max-width: 576px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .top-subtitle-bar p {
-    font-size: 0.8rem;
-  }
-  
-  .main-header {
-    padding: 1rem 0.75rem;
-  }
-  
-  .header-title {
-    font-size: 1.3rem;
-  }
-  
-  .content-intro {
-    padding: 1rem 0.75rem;
-    font-size: 1rem;
-  }
-}
-
-
 .highlight-intro {
   background-color: #952F66;
   color: white;
   padding: 0.2rem 1rem;
   font-weight: 500;
+}
+
+
+
+// ============================================
+// RESPONSIVNOST - MEDIA QUERIES
+// ============================================
+
+// LARGE TABLETS (do 1024px)
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
+  
+  .header-title img {
+    width: 18rem;
+  }
+  
+  .content-intro {
+    font-size: 1.1rem;
+    padding-top: 2.5rem;
+  }
+}
+
+// TABLETS (do 768px)
+@media (max-width: 768px) {
+  .top-subtitle-bar p {
+    font-size: 1rem;
+  }
+  
+  .header-container {
+    max-height: 70px;
+    padding: 0 0.5rem;
+  }
+  
+  .header-logo img,
+  .header-logo svg {
+    width: 3.5rem;
+  }
+  
+  .header-title img {
+    width: 14rem;
+  }
+  
+  .hamburger-menu {
+    width: 35px;
+    height: 35px;
+    
+    span {
+      width: 25px;
+      height: 2.5px;
+    }
+  }
+  
+  .content-intro {
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .grid-container {
+    gap: 1.25rem;
+    padding: 1.5rem 1.5rem;
+  }
+  
+  .grid-item {
+    border-radius: 30px;
+  }
+}
+
+// MOBILE (do 576px)
+@media (max-width: 576px) {
+  .top-subtitle-bar {
+    padding: 0.5rem 0.75rem;
+    
+    p {
+      font-size: 0.85rem;
+      letter-spacing: 0.2px;
+    }
+  }
+  
+  .main-header {
+    padding: 0.4rem 0rem;
+  }
+  
+  .header-container {
+    max-height: 60px;
+    padding: 0 0.5rem;
+  }
+  
+  .header-logo img,
+  .header-logo svg {
+    width: 2.8rem;
+  }
+  
+  .header-title img {
+    width: 11rem;
+  }
+  
+  .hamburger-menu {
+    width: 30px;
+    height: 30px;
+    gap: 5px;
+    
+    span {
+      width: 22px;
+      height: 2px;
+    }
+  }
+  
+  .content-intro {
+    font-size: 0.95rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+  
+  .grid-item {
+    border-radius: 25px;
+  }
+  
+  .page-footer {
+    padding: 1rem 0.75rem;
+    
+    .footer-follow {
+      font-size: 0.85rem;
+    }
+    
+    .footer-copyright {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// EXTRA SMALL MOBILE (do 375px)
+@media (max-width: 375px) {
+  .top-subtitle-bar p {
+    font-size: 0.75rem;
+  }
+  
+  .header-logo img,
+  .header-logo svg {
+    width: 2.5rem;
+  }
+  
+  .header-title img {
+    width: 9rem;
+  }
+  
+  .content-intro {
+    font-size: 0.9rem;
+  }
+  
+  .grid-container {
+    padding: 1rem 0.75rem;
+  }
 }
