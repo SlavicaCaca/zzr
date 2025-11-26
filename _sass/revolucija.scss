@@ -90,11 +90,16 @@ body.grid-gallery-active {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   img {
-    max-height: 80px;
+    max-height: 120px;  // Povećajte ovu vrednost koliko želite
+    max-width: 100%;    // Sprečava overflow
     width: auto;
-    display: inline-block;
+    height: auto;
+    display: block;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
   
