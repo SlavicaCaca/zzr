@@ -1,6 +1,9 @@
-// KOMPLETNO RESETOVANJE MINIMAL MISTAKES STILOVA
+// ============================================
+// ŽENA ZNAČI REVOLUCIJA - KOMPLETNI STILOVI
+// ============================================
+
+// RESETOVANJE MINIMAL MISTAKES STILOVA
 .grid-gallery-page {
-  // Ukloni sve default stilove
   .page__content,
   .page__inner-wrap,
   .page__title,
@@ -12,17 +15,20 @@
   }
 }
 
-// GLAVNI KONTEJNER
+// TELO STRANICE
 body.grid-gallery-active {
-  background: linear-gradient(180deg, #d4709a 0%, #c85d8e 50%, #a8497a 100%) !important;
+  background: linear-gradient(180deg, #ca5e91 0%, #8b3968 50%, #60003b 100%) !important;
+  margin: 0;
+  padding: 0;
   
-  // Sakrij header/footer ako postoje
+  // Sakrij header/footer od Minimal Mistakes
   .masthead,
   .page__footer {
     display: none;
   }
 }
 
+// GLAVNI KONTEJNER
 .grid-gallery-page {
   background: transparent;
   min-height: 100vh;
@@ -79,16 +85,19 @@ body.grid-gallery-active {
   margin: 0 auto;
 }
 
-// GRID ITEMS - KARTICE
+// GRID ITEMS - SAMO SLIKE, BEZ TEKSTA
 .grid-item {
   position: relative;
-  background: #2a0e1f;
+  background: #60003b;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   aspect-ratio: 3/4;
+  display: block;
+  text-decoration: none;
+  color: inherit;
   
   &:hover {
     transform: translateY(-3px);
@@ -100,56 +109,40 @@ body.grid-gallery-active {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
   }
   
-  // OVERLAY ZA TEKST
-  .grid-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    background: linear-gradient(
-      to bottom,
-      rgba(42, 14, 31, 0.3) 0%,
-      rgba(42, 14, 31, 0.85) 100%
-    );
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+// FOOTER
+.page-footer {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  
+  .footer-follow {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
     
-    h3 {
+    a {
       color: #ffffff;
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin: 0 0 1rem 0;
-      line-height: 1.3;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    }
-    
-    .item-subtitle {
-      background: rgba(194, 96, 140, 0.95);
-      color: #ffffff;
-      display: inline-block;
-      padding: 0.5rem 1.2rem;
-      border-radius: 25px;
-      margin: 0;
-      font-size: 0.95rem;
-      font-weight: 500;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      margin-left: 0.5rem;
+      
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
   
-  // Za stavke bez slike (samo tekst overlay)
-  &.text-only {
-    background: rgba(42, 14, 31, 0.7);
-    
-    .grid-overlay {
-      background: transparent;
-    }
+  .footer-copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
   }
 }
 
@@ -186,43 +179,5 @@ body.grid-gallery-active {
   .content-intro {
     padding: 1rem 0.75rem 0.75rem;
     font-size: 0.95rem;
-  }
-  
-  .grid-item {
-    .grid-overlay h3 {
-      font-size: 1.1rem;
-    }
-    
-    .grid-overlay .item-subtitle {
-      font-size: 0.85rem;
-      padding: 0.4rem 1rem;
-    }
-  }
-}
-
-// FOOTER (ako ga želite)
-.page-footer {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1.5rem 1rem;
-  text-align: center;
-  
-  .footer-follow {
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-copyright {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85rem;
-  }
-  
-  a {
-    color: #ffffff;
-    text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
