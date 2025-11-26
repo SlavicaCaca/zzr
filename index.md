@@ -12,24 +12,24 @@ gallery_items:
     title: "Najopasnije mesto za ženu je"
     subtitle: "njen dom"
   
-  - image: /assets/images/tigray.jpg
+  - image: /assets/images/1.png
     title: "Žene u Tigrayu trpe"
     subtitle: "nasilje koje ne prestaje"
   
-  - image: /assets/images/prava.jpg
+  - image: /assets/images/2.png
     title: "Ženska prava ili"
     subtitle: "Dekadentnost Zapada?"
   
   # Red 2 (duplikat sa slike)
-  - image: /assets/images/dom.jpg
+  - image: /assets/images/1.png
     title: "Najopasnije mesto za ženu je"
     subtitle: "njen dom"
   
-  - image: /assets/images/tigray.jpg
+  - image: /assets/images/2.png
     title: "Žene u Tigrayu trpe"
     subtitle: "nasilje koje ne prestaje"
   
-  - image: /assets/images/prava.jpg
+  - image: /assets/images/1.png
     title: "Ženska prava ili"
     subtitle: "Dekadentnost Zapada?"
 
