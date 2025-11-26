@@ -58,11 +58,11 @@ body.grid-gallery-active {
 }
 
 // GLAVNI HEADER (TAMNA SEKCIJA) - FIKSIRANA VISINA
+// GLAVNI HEADER (TAMNA SEKCIJA)
 .main-header {
   background: #60003b;
-  padding: 0.5rem 1rem;  // Smanjeni padding
+  padding: 2rem 1rem;     // Dovoljno prostora za veliku sliku
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  min-height: 100px;     // Fiksirana minimalna visina
 }
 
 .header-container {
@@ -72,7 +72,6 @@ body.grid-gallery-active {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  height: 100%;          // Popuni celu visinu
 }
 
 // LOGO
@@ -87,6 +86,7 @@ body.grid-gallery-active {
 }
 
 // NASLOV - PNG SLIKA (VELIKA)
+// NASLOV - PNG SLIKA (VELIKA)
 .header-title {
   flex-grow: 1;
   text-align: center;
@@ -95,14 +95,13 @@ body.grid-gallery-active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;           // Popuni visinu kontejnera
   
   img {
-    height: 90px;         // Fiksna visina - povećajte koliko hoćete
-    width: auto;
-    max-width: 100%;
+    height: auto;           // Pustite sliku da bude prirodne veličine
+    max-height: none;       // Uklonite ograničenje
+    width: auto;            // Auto širina
+    max-width: 600px;       // Maksimalna širina - povećajte po potrebi
     display: block;
-    object-fit: contain;  // Zadržava proporcije
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
   
