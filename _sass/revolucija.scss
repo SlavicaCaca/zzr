@@ -1,0 +1,228 @@
+// KOMPLETNO RESETOVANJE MINIMAL MISTAKES STILOVA
+.grid-gallery-page {
+  // Ukloni sve default stilove
+  .page__content,
+  .page__inner-wrap,
+  .page__title,
+  article {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+}
+
+// GLAVNI KONTEJNER
+body.grid-gallery-active {
+  background: linear-gradient(180deg, #d4709a 0%, #c85d8e 50%, #a8497a 100%) !important;
+  
+  // Sakrij header/footer ako postoje
+  .masthead,
+  .page__footer {
+    display: none;
+  }
+}
+
+.grid-gallery-page {
+  background: transparent;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+// HEADER SEKCIJA
+.page-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  
+  .page-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.5px;
+  }
+}
+
+// INTRO TEKST
+.content-intro {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.5rem 1rem 1rem;
+  margin: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// GRID KONTEJNER
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// GRID ITEMS - KARTICE
+.grid-item {
+  position: relative;
+  background: #2a0e1f;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  aspect-ratio: 3/4;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  // OVERLAY ZA TEKST
+  .grid-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      rgba(42, 14, 31, 0.3) 0%,
+      rgba(42, 14, 31, 0.85) 100%
+    );
+    
+    h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      line-height: 1.3;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    .item-subtitle {
+      background: rgba(194, 96, 140, 0.95);
+      color: #ffffff;
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      border-radius: 25px;
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  // Za stavke bez slike (samo tekst overlay)
+  &.text-only {
+    background: rgba(42, 14, 31, 0.7);
+    
+    .grid-overlay {
+      background: transparent;
+    }
+  }
+}
+
+// RESPONSIVNOST
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .page-header .page-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.75rem 1.5rem;
+  }
+  
+  .page-header {
+    padding: 1.5rem 0.75rem 0.75rem;
+    
+    .page-title {
+      font-size: 1.6rem;
+    }
+    
+    .page-subtitle {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .content-intro {
+    padding: 1rem 0.75rem 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .grid-item {
+    .grid-overlay h3 {
+      font-size: 1.1rem;
+    }
+    
+    .grid-overlay .item-subtitle {
+      font-size: 0.85rem;
+      padding: 0.4rem 1rem;
+    }
+  }
+}
+
+// FOOTER (ako ga želite)
+.page-footer {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  
+  .footer-follow {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
