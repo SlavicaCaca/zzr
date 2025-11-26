@@ -2,6 +2,7 @@
 layout: grid-gallery
 title: "Žena znači Revolucija"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+logo: /assets/images/logo.png
 intro: "rodno zasnovano nasilje, seksizam i mizginija:"
 show_footer: true
 instagram_url: "https://instagram.com/your_account"
