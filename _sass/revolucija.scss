@@ -299,5 +299,25 @@ body.grid-gallery-active {
   }
 }
 
-
+// LOGO - sa linkom
+.header-logo {
+  flex-shrink: 0;
+  
+  a {
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  img, svg {
+    display: block;
+    width: 124px;
+    height: auto;
+    margin-left: -26px;
+  }
+}
 
