@@ -1,147 +1,49 @@
-// HAMBURGER MENI - RESPONZIVNI
+// HAMBURGER MENU
 .hamburger-menu {
   background: none;
   border: none;
   cursor: pointer;
-  padding: clamp(8px, 3vw, 15px); /* Responzivni padding */
+  padding: 15px;
   z-index: 1001;
   position: relative;
-  width: clamp(40px, 10vw, 50px); /* Responzivna širina */
-  height: clamp(40px, 10vw, 50px); /* Responzivna visina */
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(3px, 1vw, 5px); /* Responzivni gap */
+  gap: 5px;
   
   span {
     display: block;
-    height: clamp(2px, 0.6vw, 3px); /* Responzivna debljina linije */
+    height: 3px;
     background-color: #FFB6D9;
     transition: all 0.3s ease;
     border-radius: 2px;
-    width: 100%; /* Linije će se prilagoditi širini dugmeta */
   }
   
-  /* Različite širine linija */
-  span:nth-child(1) { 
-    width: clamp(24px, 7vw, 30px); 
-    margin-left: auto;
-  }
-  span:nth-child(2) { 
-    width: clamp(16px, 4vw, 20px); 
-    margin-left: auto;
-  }
-  span:nth-child(3) { 
-    width: clamp(24px, 7vw, 30px); 
-    margin-left: auto;
-  }
+  span:nth-child(1) { width: 30px; }
+  span:nth-child(2) { width: 20px; }
+  span:nth-child(3) { width: 30px; }
   
-  /* Active state - animacija */
   &.active span {
-    width: clamp(24px, 7vw, 30px) !important;
-    margin-left: 0;
+    width: 30px !important;
   }
   
   &.active span:nth-child(1) {
-    transform: 
-      rotate(45deg) 
-      translate(
-        clamp(4px, 1.5vw, 8px), 
-        clamp(4px, 1.5vw, 8px)
-      );
+    transform: rotate(45deg) translate(8px, 8px);
   }
   
   &.active span:nth-child(2) {
     opacity: 0;
-    transform: translateX(clamp(10px, 4vw, 20px));
+    transform: translateX(20px);
   }
   
   &.active span:nth-child(3) {
-    transform: 
-      rotate(-45deg) 
-      translate(
-        clamp(4px, 1.5vw, 8px), 
-        clamp(-4px, -1.5vw, -8px)
-      );
+    transform: rotate(-45deg) translate(8px, -8px);
   }
   
   &:hover span {
     background-color: #fff;
   }
-}
-
-/* Responzivnost za mobilne uređaje */
-@media (max-width: 768px) {
-  .hamburger-menu {
-    /* clamp funkcija će automatski prilagoditi, ali možete dodati specifične stilove */
-    width: 44px;
-    height: 44px;
-    padding: 10px;
-    
-    span {
-      height: 2.5px;
-    }
-    
-    span:nth-child(1) { width: 26px; }
-    span:nth-child(2) { width: 18px; }
-    span:nth-child(3) { width: 26px; }
-    
-    &.active span:nth-child(1) {
-      transform: rotate(45deg) translate(6px, 6px);
-    }
-    
-    &.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(6px, -6px);
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .hamburger-menu {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    
-    span {
-      height: 2px;
-    }
-    
-    span:nth-child(1) { width: 24px; }
-    span:nth-child(2) { width: 16px; }
-    span:nth-child(3) { width: 24px; }
-    
-    &.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    &.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  }
-}
-
-/* Poboljšanje za touch uređaje */
-@media (hover: none) and (pointer: coarse) {
-  .hamburger-menu {
-    padding: 12px; /* Veći padding za lakše klikanje prstom */
-    
-    &:hover span {
-      background-color: #FFB6D9; /* Onemogući hover efekat na touch uređajima */
-    }
-    
-    &:active span {
-      background-color: #fff; /* Feedback pri kliku */
-    }
-  }
-}
-
-/* Pristupačnost - fokus stanje */
-.hamburger-menu:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
-}
-
-.hamburger-menu:focus:not(:focus-visible) {
-  outline: none;
 }
