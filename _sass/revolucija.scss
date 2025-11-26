@@ -103,6 +103,7 @@ body.grid-gallery-active {
   img {
     align-items: center;
     height: auto;           // Pustite sliku da bude prirodne veličine
+    margin-top: 1.6rem;
     max-height: none;       // Uklonite ograničenje
     width: auto;            // Auto širina
     max-width: 483px;       // Maksimalna širina - povećajte po potrebi
