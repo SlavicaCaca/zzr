@@ -61,7 +61,7 @@ body.grid-gallery-active {
 // GLAVNI HEADER (TAMNA SEKCIJA)
 .main-header {
   background: #60003b;
-  padding: 2rem 1rem;     // Dovoljno prostora za veliku sliku
+  padding: 0.5rem 1rem;     // Dovoljno prostora za veliku sliku
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,6 +72,7 @@ body.grid-gallery-active {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  padding: 0;
 }
 
 // LOGO
