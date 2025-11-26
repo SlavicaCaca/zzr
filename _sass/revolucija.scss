@@ -297,3 +297,80 @@ body.grid-gallery-active {
     font-size: 1rem;
   }
 }
+
+
+/////////////
+
+// RESPONSIVNOST
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .header-title img {
+    max-width: 400px;      // Smanjite maksimalnu širinu na tabletima
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title img {
+    max-width: 300px;      // Još manje na manjim tabletima
+    max-height: 60px;
+  }
+  
+  .header-logo img,
+  .header-logo svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hamburger-menu {
+    width: 35px;
+    height: 35px;
+    
+    span {
+      width: 25px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .header-title img {
+    max-width: 250px;      // Prilagođeno za mobile
+    max-height: 50px;
+    margin-top: 0.5rem;    // Manji margin na mobilnim
+  }
+  
+  .top-subtitle-bar p {
+    font-size: 0.8rem;
+  }
+  
+  .main-header {
+    padding: 0.5rem 0.75rem; // Manji padding
+  }
+  
+  .content-intro {
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+// Za ekstremno male ekrane
+@media (max-width: 400px) {
+  .header-title img {
+    max-width: 200px;
+    max-height: 45px;
+  }
+  
+  .header-logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
