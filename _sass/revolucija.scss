@@ -57,11 +57,10 @@ body.grid-gallery-active {
   }
 }
 
-// GLAVNI HEADER (TAMNA SEKCIJA) - FIKSIRANA VISINA
-// GLAVNI HEADER (TAMNA SEKCIJA)
+// GLAVNI HEADER
 .main-header {
   background: #60003b;
-  padding: 0.5rem 1.2rem;     // Dovoljno prostora za veliku sliku
+  padding: 0.5rem 0rem;  
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
