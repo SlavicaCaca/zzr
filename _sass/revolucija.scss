@@ -84,19 +84,29 @@ body.grid-gallery-active {
   }
 }
 
-// NASLOV
+// NASLOV - PNG SLIKA
 .header-title {
   flex-grow: 1;
   text-align: center;
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 700;
   margin: 0;
   padding: 0;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
+  
+  img {
+    max-height: 80px;
+    width: auto;
+    display: inline-block;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+  }
 }
-
 // HAMBURGER MENU
 .hamburger-menu {
   flex-shrink: 0;
