@@ -37,50 +37,116 @@ body.grid-gallery-active {
   width: 100%;
 }
 
-// HEADER SEKCIJA
-.page-header {
+// ============================================
+// HEADER SEKCIJA - KAO NA SLICI
+// ============================================
+
+// GORNJA ROZE TRAKA SA SUBTITLEOM
+.top-subtitle-bar {
+  background: #ca5e91;
+  padding: 0.75rem 1rem;
   text-align: center;
-  padding: 2rem 1rem 1rem;
   
-  .page-subtitle {
+  p {
     color: rgba(255, 255, 255, 0.95);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 400;
+    font-style: italic;
+    margin: 0;
     letter-spacing: 0.3px;
-    margin: 0 0 0.5rem 0;
-    line-height: 1.4;
+  }
+}
+
+// GLAVNI HEADER (TAMNA SEKCIJA)
+.main-header {
+  background: #60003b;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+// LOGO
+.header-logo {
+  flex-shrink: 0;
+  
+  img, svg {
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+}
+
+// NASLOV
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+// HAMBURGER MENU
+.hamburger-menu {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 0;
+  
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
   }
   
-  .page-title {
-    color: #ffffff;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-    letter-spacing: 0.5px;
+  &:hover span {
+    background: #ca5e91;
   }
 }
 
-// INTRO TEKST
+// INTRO TEKST (ROZE SEKCIJA)
 .content-intro {
-  text-align: left;
+  background: #ca5e91;
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 1.5rem 1rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.5rem 1rem;
   margin: 0;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+// ============================================
 // GRID KONTEJNER
+// ============================================
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 0 1rem 2rem;
+  padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -146,14 +212,38 @@ body.grid-gallery-active {
   }
 }
 
+// ============================================
 // RESPONSIVNOST
+// ============================================
+
 @media (max-width: 992px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .page-header .page-title {
-    font-size: 1.8rem;
+  .header-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  
+  .header-logo img,
+  .header-logo svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hamburger-menu {
+    width: 35px;
+    height: 35px;
+    
+    span {
+      width: 25px;
+    }
   }
 }
 
@@ -161,23 +251,23 @@ body.grid-gallery-active {
   .grid-container {
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0 0.75rem 1.5rem;
+    padding: 1.5rem 0.75rem;
   }
   
-  .page-header {
-    padding: 1.5rem 0.75rem 0.75rem;
-    
-    .page-title {
-      font-size: 1.6rem;
-    }
-    
-    .page-subtitle {
-      font-size: 0.8rem;
-    }
+  .top-subtitle-bar p {
+    font-size: 0.8rem;
+  }
+  
+  .main-header {
+    padding: 1rem 0.75rem;
+  }
+  
+  .header-title {
+    font-size: 1.3rem;
   }
   
   .content-intro {
-    padding: 1rem 0.75rem 0.75rem;
-    font-size: 0.95rem;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
   }
 }
