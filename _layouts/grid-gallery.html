@@ -69,14 +69,12 @@
       </header>
       
       <!-- Intro tekst (roze sekcija) -->
-      {% if page.intro_before %}
-        <div class="content-intro">
-          {{ page.intro_before }}
-          <span class="highlight-intro">{{ page.highlight_intro }}</span>
-          {{ page.intro_after }}
-        </div>
-      {% endif %}
-
+      {% if page.intro %}
+      <div class="content-intro">
+        {{ page.intro }}
+         <span class="highlight-intro">{{ page.highlight_intro }}</span>
+      </div>
+          
       <!-- Grid sa SAMO slikama (bez naslova/teksta) -->
       <div class="grid-container">
         {% for item in page.gallery_items %}
