@@ -1,13 +1,17 @@
+// Hamburger menu functionality
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('menu-toggle');
   const mobileNav = document.getElementById('mobile-nav');
   
   if (menuToggle && mobileNav) {
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
       mobileNav.classList.toggle('active');
       menuToggle.classList.toggle('active');
     });
     
+    // Zatvori meni kada se klikne van njega
     document.addEventListener('click', function(event) {
       const isClickInsideMenu = mobileNav.contains(event.target);
       const isClickOnToggle = menuToggle.contains(event.target);
@@ -16,6 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileNav.classList.remove('active');
         menuToggle.classList.remove('active');
       }
+    });
+    
+    // Zatvori meni nakon klika na link
+    const navLinks = mobileNav.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('active');
+      });
     });
   }
 });
