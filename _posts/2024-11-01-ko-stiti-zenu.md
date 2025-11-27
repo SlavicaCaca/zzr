@@ -5,7 +5,7 @@ author: "Dajana Djoric"
 categories: [feminizam, nasilje]
 tags: [društvo, ljudska-prava]
 header:
-  teaser: /assets/images/ko-cuva-zenu.png
+  teaser: /assets/images/ko-stiti-zenu.png
 ---
 
 pokusaj 3
