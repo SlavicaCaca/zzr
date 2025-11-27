@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Žena Znači Revolucija"
-title_image:             : "/assets/images/title-logo.png"
+title_image              : "/assets/images/title-logo.png"
 title_separator          : "-"
 subtitle                 : "digitalni prostor posvećen aktivističkim i feminističkim temama"
 name                     : #"Žena Znači Revolucija"
