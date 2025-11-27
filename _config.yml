@@ -325,3 +325,6 @@ defaults:
       comments: false
       share: true
       related: true
+
+head_scripts:
+  - /assets/js/custom.js
