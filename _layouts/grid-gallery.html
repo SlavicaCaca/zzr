@@ -6,7 +6,6 @@
     <style>
       /* Inline critical CSS */
       body {
-
         margin: 0;
         padding: 0;
       }
@@ -34,22 +33,20 @@
       <header class="main-header">
         <div class="header-container">
           <!-- Logo -->
-          <!-- Logo -->
-<div class="header-logo">
-  <a href="{{ '/' | relative_url }}" aria-label="Početna stranica">
-    {% if page.logo %}
-    <img src="{{ site.logo | relative_url }}" alt="Logo">
-    {% else %}
-    <!-- Default logo ako nema slike -->
-    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="20" r="12" fill="#FFB6D9"/>
-      <path d="M30 32 L30 50 M30 50 L25 45 M30 50 L35 45" stroke="#FFB6D9" stroke-width="3" stroke-linecap="round"/>
-    </svg>
-    {% endif %}
-  </a>
-</div>
+          <div class="header-logo">
+            <a href="{{ '/' | relative_url }}" aria-label="Početna stranica">
+              {% if site.logo %}
+              <img src="{{ site.logo | relative_url }}" alt="Logo">
+              {% else %}
+              <!-- Default logo ako nema slike -->
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="20" r="12" fill="#FFB6D9"/>
+                <path d="M30 32 L30 50 M30 50 L25 45 M30 50 L35 45" stroke="#FFB6D9" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              {% endif %}
+            </a>
+          </div>
           
-          <!-- Naslov -->
           <!-- Naslov - PNG slika -->
           <div class="header-title">
             {% if page.title_image %}
@@ -59,14 +56,32 @@
             {% endif %}
           </div>
           
-          <!-- Hamburger menu (opciono) -->
-          <button class="hamburger-menu" aria-label="Menu">
+          <!-- Hamburger menu -->
+          <button class="hamburger-menu" aria-label="Menu" id="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
       </header>
+
+      <!-- NAVIGATION MENU (pojavljuje se kada se klikne hamburger) -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-content">
+          <ul class="nav-list">
+            {% if site.navigation %}
+              {% for nav in site.navigation %}
+              <li><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></li>
+              {% endfor %}
+            {% else %}
+              <!-- Default navigacija ako nije definisana u _config.yml -->
+              <li><a href="{{ '/' | relative_url }}">Početna</a></li>
+              <li><a href="{{ '/o-nama/' | relative_url }}">O nama</a></li>
+              <li><a href="{{ '/kontakt/' | relative_url }}">Kontakt</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </nav>
       
       <!-- Intro tekst (roze sekcija) -->
       {% if page.intro %}
@@ -75,13 +90,90 @@
       </div>
       {% endif %}
           
-      <!-- Grid sa SAMO slikama (bez naslova/teksta) -->
+      <!-- Grid sa slikama -->
       <div class="grid-container">
+        
+        {% if page.show_posts %}
+        <!-- AUTOMATSKI UČITAJ POSTOVE IZ _posts -->
+        {% assign posts = site.posts %}
+        
+        <!-- Filtriraj po kategoriji ako je definisana -->
+        {% if page.filter_category %}
+          {% assign posts = site.categories[page.filter_category] %}
+        {% endif %}
+        
+        <!-- Filtriraj po tagu ako je definisan -->
+        {% if page.filter_tag %}
+          {% assign posts = site.tags[page.filter_tag] %}
+        {% endif %}
+        
+        <!-- Ograniči broj postova ako je definisano -->
+        {% if page.posts_limit %}
+          {% assign posts = posts | slice: 0, page.posts_limit %}
+        {% endif %}
+        
+        {% for post in posts %}
+        <a href="{{ post.url | relative_url }}" class="grid-item post-item">
+          <!-- Slika posta -->
+          {% if post.header.image %}
+            <img src="{{ post.header.image | relative_url }}" alt="{{ post.title }}">
+          {% elsif post.header.teaser %}
+            <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}">
+          {% elsif post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% else %}
+            <!-- Default placeholder slika -->
+            <div class="placeholder-image">
+              <span>{{ post.title | slice: 0 }}</span>
+            </div>
+          {% endif %}
+          
+          <!-- Overlay sa informacijama -->
+          <div class="post-overlay">
+            <h3 class="post-title">{{ post.title }}</h3>
+            
+            <div class="post-meta">
+              <!-- Datum -->
+              <span class="post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+              
+              <!-- Autor -->
+              {% if post.author %}
+              <span class="post-author">{{ post.author }}</span>
+              {% endif %}
+            </div>
+            
+            <!-- Kategorije/Tagovi -->
+            {% if post.categories.size > 0 %}
+            <div class="post-categories">
+              {% for category in post.categories limit:2 %}
+              <span class="category-badge">{{ category }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+        
+        {% else %}
+        <!-- RUČNO DODAVANJE STAVKI (kao što je bilo ranije) -->
         {% for item in page.gallery_items %}
         <a href="{{ item.link | relative_url }}" class="grid-item">
           <img src="{{ item.image | relative_url }}" alt="{{ item.title | default: 'Slika' }}">
+          
+          {% if item.show_overlay %}
+          <div class="simple-overlay">
+            {% if item.title %}
+            <h3>{{ item.title }}</h3>
+            {% endif %}
+            {% if item.subtitle %}
+            <p>{{ item.subtitle }}</p>
+            {% endif %}
+          </div>
+          {% endif %}
         </a>
         {% endfor %}
+        {% endif %}
+        
       </div>
 
       <!-- Footer (opciono) -->
@@ -100,6 +192,32 @@
     </div>
 
     {% include scripts.html %}
+    
+    <!-- JavaScript za hamburger meni -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        if (menuToggle && mobileNav) {
+          menuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+          });
+          
+          // Zatvori meni kada se klikne van njega
+          document.addEventListener('click', function(event) {
+            const isClickInsideMenu = mobileNav.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnToggle && mobileNav.classList.contains('active')) {
+              mobileNav.classList.remove('active');
+              menuToggle.classList.remove('active');
+            }
+          });
+        }
+      });
+    </script>
 
   </body>
 </html>
