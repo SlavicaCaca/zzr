@@ -333,6 +333,8 @@ navigation:
     url: /o-nama/
   - title: "Kontakt"
     url: /kontakt/
+  - title: "Prvi ginekološki pregled"  
+    url: /prvi-ginekoloski-pregled/
 
     
 head_scripts:
