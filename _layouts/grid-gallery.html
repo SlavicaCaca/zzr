@@ -21,7 +21,8 @@
   <body class="layout--{{ page.layout | default: layout.layout }} grid-gallery-active">
 
     <div class="grid-gallery-page">
-      
+
+      {% include masthead.html %} 
       <!-- Gornji subtitle (roze traka) -->
       {% if page.subtitle %}
       <div class="top-subtitle-bar">
