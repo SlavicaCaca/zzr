@@ -6,27 +6,14 @@ subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 intro: "prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
 permalink: /prvi-ginekoloski-pregled/
 show_footer: true
-show_posts: true 
 show_footer: true
 instagram_url: "https://instagram.com/your_account"
 
 gallery_items:
   # Red 1
-  - image: /assets/images/dom.png
-    link: /_posts/nasilje-u-porodici/
-    title: "Nasilje u porodici"  # Alt tekst za pristupačnost
+  - image: /assets/images/kod-ginekologa.png
+    link: /_posts/prvi-pregled/kod-ginekologa/
+    title: "Kod ginekologa"  # Alt tekst za pristupačnost
   
-  - image: /assets/images/tigray.png
-    link: /_posts/tigray/
-    title: "Žene u Tigrayu"
-  
-  - image: /assets/images/zenska-prava.png
-    link: /clanci/zenska-prava/
-    title: "Ženska prava"
-  
-  # Red 2
-  - image: /assets/images/ko-stiti-zenu.png
-    link: /clanci/nasilje-u-porodici/
-    title: "Nasilje u porodici"
   
 ---
