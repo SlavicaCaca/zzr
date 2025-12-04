@@ -11,7 +11,7 @@ instagram_url: "https://instagram.com/your_account"
 gallery_items:
   # Red 1
   - image: /assets/images/kod-ginekologa.png
-    link: /clanci/kod-ginekologa
+    link: /clanci/kod-ginekologa/
     title: "Kod ginekologa"  # Alt tekst za pristupačnost
   
   
