@@ -151,14 +151,16 @@ body {
   background: #60003b;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
   transition: right 0.3s ease;
-  z-index: 99;
+  z-index: 999;
   overflow-y: auto;
   
   &.active {
     right: 0;
   }
 }
-
+.mobile-nav-content {
+  padding: 5rem 2rem 2rem;
+}
 
 .nav-list {
   list-style: none;
