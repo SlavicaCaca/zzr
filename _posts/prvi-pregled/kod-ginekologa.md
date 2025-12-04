@@ -5,7 +5,7 @@ author: "Dajana Djoric"
 categories: [feminizam, nasilje]
 tags: [društvo, ljudska-prava]
 header:
-  teaser: /assets/images/vivien.png
+  teaser: /assets/images/kod-ginekologa.png
 ---
 
 pokusaj 34
