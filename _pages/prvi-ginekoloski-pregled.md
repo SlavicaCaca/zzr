@@ -1,5 +1,5 @@
 ---
-layout: grid-gallery-first
+layout: grid-gallery
 title: "Žena znači Revolucija"
 title_image: /assets/images/title-logo.png  
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
