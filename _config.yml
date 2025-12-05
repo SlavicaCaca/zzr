@@ -331,10 +331,8 @@ navigation:
     url: /
   - title: "O nama"
     url: /o-nama/
-  - title: "Kontakt"
-    url: /kontakt/
-  - title: "Prvi ginekološki pregled"  
-    url: /prvi-ginekoloski-pregled/
+  - title: "Projekti"  
+    url: /projekti/
 
     
 head_scripts:
