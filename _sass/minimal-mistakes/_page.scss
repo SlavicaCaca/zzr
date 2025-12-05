@@ -294,7 +294,6 @@ body {
 
 .page__meta {
   margin-top: 2em;
-  color: $muted-text-color;
   font-family: $sans-serif;
   font-size: $type-size-6;
   color: #fff;
@@ -344,7 +343,7 @@ body {
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: #60003b;
   }
 }
 
