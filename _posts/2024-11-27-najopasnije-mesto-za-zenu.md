@@ -1,7 +1,7 @@
 ---
 layout: single
 date: 2024-11-27
-author: "Dajana Djoric"
+author: ana_markovic
 categories: [feminizam, nasilje]
 tags: [društvo, ljudska-prava]
 header:
