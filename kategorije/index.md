@@ -11,7 +11,7 @@ permalink: /kategorije/
   </div>
   
   <div class="category-card">
-    <h2><a href="/kategorije/queer-lgbtq/">Queer teme i LGBTQ+</a></h2>
+    <h2><a href="/kategorije/lgbtq/">LGBTQ+ teme</a></h2>
     <p>LGBTQ+ zajednica, kvir aktivizam, rodna raznolikost</p>
   </div>
   
