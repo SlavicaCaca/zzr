@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6,
   .page__inner-wrap,
   .page__title,
   article {
-    color: #fff;
     background: none !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -35,6 +34,10 @@ h1, h2, h3, h4, h5, h6,
 // TELO STRANICE
 body {
   background: #ca5e91;
+  color: #fff;
+}
+
+.page__title{
   color: #fff;
 }
 
