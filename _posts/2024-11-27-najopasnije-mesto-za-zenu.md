@@ -4,6 +4,7 @@ date: 2024-11-27
 author: ana_markovic
 categories: [feminizam, nasilje]
 tags: [društvo, ljudska-prava]
+author_profile: true
 header:
   teaser: /assets/images/dom.png
 ---
