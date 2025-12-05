@@ -1,0 +1,12 @@
+ana_markovic:
+  name: "Ana Marković"
+  bio: "Feministička aktivistkinja i novinarka"
+  avatar: "/assets/images/authors/ana.jpg"
+  email: "ana@example.com"
+  instagram: "https://instagram.com/ana"
+
+marija_petrovic:
+  name: "Marija Petrović"
+  bio: "Aktivistkinja za ženska prava"
+  avatar: "/assets/images/authors/marija.jpg"
+  twitter: "https://twitter.com/marija"
