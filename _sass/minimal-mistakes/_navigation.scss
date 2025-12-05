@@ -84,7 +84,6 @@
 
       &:hover {
         color: $link-color-hover;
-        color: #952F66;
       }
 
       &.current,
@@ -128,7 +127,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
+    color: #fff;
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
