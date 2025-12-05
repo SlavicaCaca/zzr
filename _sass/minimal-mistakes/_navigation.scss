@@ -139,6 +139,7 @@
     &:first-child {
       border-start-end-radius: 0;
       border-end-end-radius: 0;
+       color: #fff;
     }
 
     &:last-child {
@@ -148,8 +149,7 @@
     }
 
     &.disabled {
-      //color: rgba($muted-text-color, 0.5);
-       color: #fff;
+      color: rgba($muted-text-color, 0.5);
       pointer-events: none;
       cursor: not-allowed;
     }
