@@ -287,10 +287,33 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /kategorije/
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /tagovi/
+
+# Lista svih kategorija (za navigaciju)
+categories:
+  - name: "Feminizam i rod"
+    slug: feminizam-i-rod
+  - name: "LGBTQ+ teme"
+    slug: lgbtq
+  - name: "Aktivizam i društvene promene"
+    slug: aktivizam
+  - name: "Nasilje i sistemski problemi"
+    slug: nasilje
+  - name: "Društvo i kultura"
+    slug: drustvo-kultura
+  - name: "Zdravlje i telo"
+    slug: zdravlje-telo
+  - name: "Teorija"
+    slug: teorija
+  - name: "Praktične teme"
+    slug: prakticne-teme
+
+
+
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
