@@ -14,6 +14,10 @@ gallery_items:
   - image: /assets/images/kod-ginekologa.png
     link: /clanci/kod-ginekologa/
     title: "Kod ginekologa"  # Alt tekst za pristupačnost
+
+    - image: /assets/images/kod-ginekologa.png
+    link: /clanci/test1234/
+    title: "Test1234"  # Alt tekst za pristupačnost
   
   
 ---
