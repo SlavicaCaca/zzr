@@ -4,7 +4,7 @@ title: "Žena znači Revolucija"
 title_image: /assets/images/title-logo.png  
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 intro: "prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
-permalink: /prvi-ginekoloski-pregled/
+permalink: /projekti/
 show_posts: false
 show_footer: true
 instagram_url: "https://instagram.com/your_account"
