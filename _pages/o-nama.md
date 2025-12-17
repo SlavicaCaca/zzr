@@ -1,6 +1,7 @@
 ---
-layout: single
+layout: grid-gallery
 title: "O nama"
+title_image: /assets/images/title-logo.png  
 permalink: /o-nama/
 intro: "o nama:"
 ---
