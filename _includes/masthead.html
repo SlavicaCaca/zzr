@@ -39,11 +39,11 @@
     </div>
   </header>
 
-  <!-- Overlay -->
-<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
-
   <!-- MOBILE NAVIGATION -->
   <nav class="mobile-nav" id="mobile-nav">
+    <!-- X dugme za zatvaranje -->
+    <button class="mobile-nav-close" aria-label="Zatvori meni" id="menu-close"></button>
+    
     <div class="mobile-nav-content">
       <ul class="nav-list">
         {% if site.navigation %}
@@ -58,4 +58,7 @@
       </ul>
     </div>
   </nav>
+  
+  <!-- Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
 </div>
