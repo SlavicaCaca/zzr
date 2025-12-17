@@ -28,11 +28,12 @@
   span:nth-child(3) { width: 40px; }
   
   &.active span {
-    width: 30px !important;
+    width: 35px !important;
+    background-color: #fff;
   }
   
   &.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(9px, 9px);
   }
   
   &.active span:nth-child(2) {
@@ -41,10 +42,51 @@
   }
   
   &.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(9px, -9px);
   }
   
   &:hover span {
+    background-color: #fff;
+  }
+}
+
+// X DUGME UNUTAR MENIJA (dodatno)
+.mobile-nav-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #FFB6D9;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+  }
+  
+  &::before {
+    transform: rotate(45deg);
+  }
+  
+  &::after {
+    transform: rotate(-45deg);
+  }
+  
+  &:hover::before,
+  &:hover::after {
     background-color: #fff;
   }
 }
