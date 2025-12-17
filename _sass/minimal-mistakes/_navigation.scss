@@ -127,23 +127,26 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
     &:hover {
-      @include yiq-contrasted($muted-text-color);
+     // @include yiq-contrasted($muted-text-color);
+      color: #fff;
+      background: #60003b;
     }
 
     &:first-child {
       border-start-end-radius: 0;
       border-end-end-radius: 0;
+      color: #fff;
     }
 
     &:last-child {
       margin-inline-start: -1px;
       border-start-start-radius: 0;
       border-end-start-radius: 0;
+      color: #fff;
     }
 
     &.disabled {

@@ -1,4 +1,7 @@
-// MONTSERRAT FONT 
+// ============================================
+// MONTSERRAT FONT ZA CEO BLOG
+// ============================================
+
 * {
   font-family: 'Montserrat', sans-serif !important;
 }
@@ -29,17 +32,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 // TELO STRANICE
-body.grid-gallery-active {
-  // background: linear-gradient(180deg, #ca5e91 0%, #8b3968 50%, #60003b 100%) !important;
+body {
   background: #ca5e91;
-  margin: 0;
+  color: #fff;
+}
+
+.page__title a {
+  color: #fff;
+}
+
+// Header stilovi primenjuju se SVUDA
+.masthead {
+  display: block !important; // ← Prikaži masthead
   padding: 0;
-  
-  // Sakrij header/footer od Minimal Mistakes
-  .masthead,
-  .page__footer {
-    display: none;
-  }
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 // GLAVNI KONTEJNER
@@ -62,7 +71,7 @@ body.grid-gallery-active {
   
   p {
     color: rgba(255, 255, 255, 0.95);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 100;
     font-style: italic;
     margin: -5px;
@@ -70,11 +79,12 @@ body.grid-gallery-active {
   }
 }
 
-// GLAVNI HEADER
 .main-header {
   background: #60003b;
   padding: 0.5rem 0rem;  
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 100;
 }
 
 .header-container {
@@ -84,7 +94,6 @@ body.grid-gallery-active {
   justify-content: space-between;
 }
 
-// LOGO
 .header-logo {
   flex-shrink: 0;
   
@@ -92,16 +101,20 @@ body.grid-gallery-active {
     display: block;
     text-decoration: none;
     transition: opacity 0.2s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
   }
   
   img, svg {
     display: block;
     width: 4.6rem;
     height: auto;
+    margin-left: 1rem;
   }
 }
 
-// NASLOV - PNG 
 .header-title {
   flex-grow: 1;
   text-align: center;
@@ -115,8 +128,8 @@ body.grid-gallery-active {
   
   img {
     align-items: center;
-    height: auto;           // Uklonite ograničenje
-    width: 22rem;            // Maksimalna širina - povećajte po potrebi
+    height: auto;
+    width: 22rem;
     display: block;
     filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
   }
@@ -132,15 +145,90 @@ body.grid-gallery-active {
 }
 
 
-// INTRO TEKST 
+ 
+// MOBILE NAVIGATION
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: #60003b;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 999;
+  overflow-y: auto;
+  
+  &.active {
+    right: 0;
+  }
+}
+.mobile-nav-content {
+  padding: 5rem 2rem 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    margin-bottom: 0.5rem;
+    
+    a {
+      display: block;
+      padding: 1rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background: rgba(202, 94, 145, 0.2);
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+// OVERLAY kada je meni otvoren
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+// ============================================
+// INTRO SEKCIJA
+// ============================================
+
 .content-intro {
   background: #ca5e91;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 600;
-  padding-top: 3rem;
+  padding-top: 1rem;
   margin: 0;
-  text-align: left;
+  text-align: center;
+}
+
+.highlight-intro {
+  background-color: #952F66;
+  color: white;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
 }
 
 // ============================================
@@ -155,7 +243,7 @@ body.grid-gallery-active {
   margin: 0 auto;
 }
 
-// GRID ITEMS - SAMO SLIKE, BEZ TEKSTA
+// GRID ITEMS - OSNOVNI STILOVI
 .grid-item {
   position: relative;
   background: #60003b;
@@ -187,7 +275,114 @@ body.grid-gallery-active {
   }
 }
 
+// PLACEHOLDER ZA POSTOVE BEZ SLIKE
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #952F66 0%, #60003b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+// ============================================
+// POST OVERLAY - ZA POSTOVE SA INFORMACIJAMA
+// ============================================
+
+.post-item .post-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(96, 0, 59, 0.95) 0%,
+    rgba(96, 0, 59, 0.7) 70%,
+    transparent 100%
+  );
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover .post-overlay {
+  transform: translateY(-5px);
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+  
+  .post-date,
+  .post-author {
+    display: inline-block;
+  }
+  
+  .post-author::before {
+    content: "• ";
+  }
+}
+
+.post-categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(202, 94, 145, 0.8);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+// JEDNOSTAVAN OVERLAY - ZA RUČNE STAVKE
+.simple-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(96, 0, 59, 0.9), transparent);
+  color: white;
+  
+  h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+// ============================================
 // FOOTER
+// ============================================
+
 .page-footer {
   background: rgba(0, 0, 0, 0.2);
   padding: 1.5rem 1rem;
@@ -216,20 +411,10 @@ body.grid-gallery-active {
   }
 }
 
-.highlight-intro {
-  background-color: #952F66;
-  color: white;
-  padding: 0.2rem 1rem;
-  font-weight: 500;
-}
-
-
-
 // ============================================
 // RESPONSIVNOST - MEDIA QUERIES
 // ============================================
 
-// LARGE TABLETS (do 1024px)
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
@@ -245,9 +430,12 @@ body.grid-gallery-active {
     font-size: 1.1rem;
     padding-top: 2.5rem;
   }
+  
+  .mobile-nav {
+    width: 260px;
+  }
 }
 
-// TABLETS (do 768px)
 @media (max-width: 768px) {
   .top-subtitle-bar p {
     font-size: 1rem;
@@ -260,13 +448,15 @@ body.grid-gallery-active {
   
   .header-logo img,
   .header-logo svg {
-    width: 4.2rem;
+    width: 3.5rem;
+    margin-left: 0.5rem;
   }
   
   .header-title img {
     width: 18rem;
   }
   
+
   
   .content-intro {
     font-size: 1rem;
@@ -281,9 +471,17 @@ body.grid-gallery-active {
   .grid-item {
     border-radius: 30px;
   }
+  
+  .mobile-nav {
+    width: 240px;
+  }
+  
+  .nav-list li a {
+    font-size: 1rem;
+    padding: 0.85rem;
+  }
 }
 
-// MOBILE (do 576px)
 @media (max-width: 576px) {
   .top-subtitle-bar {
     padding: 0.5rem 0.75rem;
@@ -295,22 +493,25 @@ body.grid-gallery-active {
   }
   
   .main-header {
-    padding: 0.6rem 0rem;
+    padding: 0.4rem 0rem;
   }
   
   .header-container {
     max-height: 60px;
-    padding: 0 0.5rem;
+    padding: 0 0.25rem;
   }
   
   .header-logo img,
   .header-logo svg {
-    width: 3.8rem;
+    width: 2.8rem;
+    margin-left: 0.25rem;
   }
   
   .header-title img {
-    width: 16rem;
+    width: 14rem;
   }
+  
+
   
   .content-intro {
     font-size: 0.95rem;
@@ -327,6 +528,23 @@ body.grid-gallery-active {
     border-radius: 25px;
   }
   
+  .post-title {
+    font-size: 1rem;
+  }
+  
+  .post-meta {
+    font-size: 0.8rem;
+  }
+  
+  .mobile-nav {
+    width: 80%;
+    max-width: 280px;
+  }
+  
+  .mobile-nav-content {
+    padding: 4rem 1.5rem 2rem;
+  }
+  
   .page-footer {
     padding: 1rem 0.75rem;
     
@@ -340,7 +558,6 @@ body.grid-gallery-active {
   }
 }
 
-// EXTRA SMALL MOBILE (do 375px)
 @media (max-width: 375px) {
   .top-subtitle-bar p {
     font-size: 0.75rem;
@@ -348,11 +565,11 @@ body.grid-gallery-active {
   
   .header-logo img,
   .header-logo svg {
-    width: 3.5rem;
+    width: 2.5rem;
   }
   
   .header-title img {
-    width: 14rem;
+    width: 12rem;
   }
   
   .content-intro {
@@ -361,5 +578,53 @@ body.grid-gallery-active {
   
   .grid-container {
     padding: 1rem 0.75rem;
+  }
+}
+
+
+.page__taxonomy-item {
+  border-radius: 21px;
+}
+
+
+
+// CATEGORY GRID - stranicu sa svim kategorijama
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.category-card {
+  background: #60003b;
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    
+    a {
+      color: white;
+      text-decoration: none;
+      
+      &:hover {
+        color: #ca5e91;
+      }
+    }
+  }
+  
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
   }
 }

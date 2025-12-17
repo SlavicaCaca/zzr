@@ -18,8 +18,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Žena Znači Revolucija"
+title_image              : "/assets/images/title-logo.png"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "digitalni prostor posvećen aktivističkim i feminističkim temama"
 name                     : #"Žena Znači Revolucija"
 description              : #"An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -286,10 +287,33 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /kategorije/
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /tagovi/
+
+# Lista svih kategorija (za navigaciju)
+categories:
+  - name: "Feminizam i rod"
+    slug: feminizam-i-rod
+  - name: "LGBTQ+ teme"
+    slug: lgbtq
+  - name: "Aktivizam i društvene promene"
+    slug: aktivizam
+  - name: "Nasilje i sistemski problemi"
+    slug: nasilje
+  - name: "Društvo i kultura"
+    slug: drustvo-kultura
+  - name: "Zdravlje i telo"
+    slug: zdravlje-telo
+  - name: "Teorija"
+    slug: teorija
+  - name: "Praktične teme"
+    slug: prakticne-teme
+
+
+
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -322,5 +346,17 @@ defaults:
       author_profile: false
       read_time: false
       comments: false
-      share: true
+      share: false
       related: true
+# Navigacija
+navigation:
+  - title: "Početna"
+    url: /
+  - title: "O nama"
+    url: /o-nama/
+  - title: "Projekti"  
+    url: /projekti/
+
+    
+head_scripts:
+  - /assets/js/custom.js
