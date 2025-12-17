@@ -1,12 +1,14 @@
-ana_markovic:
-  name: "Ana Marković"
-  bio: "Feministička aktivistkinja i novinarka"
-  avatar: "/assets/images/authors/ana.jpg"
-  email: "ana@example.com"
-  instagram: "https://instagram.com/ana"
+dajana:
+  name: "Dajana"
+  bio: "Dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
+  avatar: "/assets/images/authors/dajana.jpg"
 
-marija_petrovic:
-  name: "Marija Petrović"
-  bio: "Aktivistkinja za ženska prava"
-  avatar: "/assets/images/authors/marija.jpg"
-  twitter: "https://twitter.com/marija"
+val:
+  name: "Val"
+  bio: "Apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
+  avatar: "/assets/images/authors/val.jpg"
+
+mina:
+  name: "Mina"
+  bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
+  avatar: "/assets/images/authors/mina.jpg"  
