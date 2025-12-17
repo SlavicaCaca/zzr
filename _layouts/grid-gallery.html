@@ -67,6 +67,9 @@
 
       <!-- NAVIGATION MENU (pojavljuje se kada se klikne hamburger) -->
       <nav class="mobile-nav" id="mobile-nav">
+        <!-- X dugme za zatvaranje -->
+        <button class="mobile-nav-close" aria-label="Zatvori meni" id="menu-close"></button>
+        
         <div class="mobile-nav-content">
           <ul class="nav-list">
             {% if site.navigation %}
@@ -82,6 +85,9 @@
           </ul>
         </div>
       </nav>
+      
+      <!-- Overlay -->
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
       
       <!-- Intro tekst (roze sekcija) -->
       {% if page.intro %}
@@ -193,7 +199,5 @@
 
     {% include scripts.html %}
     
-  
-
   </body>
 </html>
