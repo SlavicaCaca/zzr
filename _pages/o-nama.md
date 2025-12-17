@@ -3,7 +3,7 @@ layout: grid-gallery
 title: "O nama"
 title_image: /assets/images/title-logo.png  
 permalink: /o-nama/
-intro: "o nama:"
+intro: "o nama"
 ---
 
 Žena znači Revolucija je neformalna feministička inicijativa posvećena stvaranju prostora u kojem se
