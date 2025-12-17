@@ -1,5 +1,5 @@
 ---
-layout: grid-gallery
+layout: single
 title: "O nama"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 title_image: /assets/images/title-logo.png  
