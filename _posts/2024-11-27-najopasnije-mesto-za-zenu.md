@@ -1,7 +1,7 @@
 ---
 layout: single
 date: 2024-11-27
-author: ana_markovic
+author: val
 categories: nasilje
 tags: [društvo, ljudska-prava]
 author_profile: true
