@@ -2,6 +2,7 @@
 layout: single
 date: 2024-11-01
 author: "dajana"
+author_profile: true
 categories: [feminizam, nasilje]
 tags: [društvo, ljudska-prava]
 header:
