@@ -28,12 +28,11 @@
   span:nth-child(3) { width: 40px; }
   
   &.active span {
-    width: 35px !important;
-    background-color: #fff;
+    width: 30px !important;
   }
   
   &.active span:nth-child(1) {
-    transform: rotate(45deg) translate(9px, 9px);
+    transform: rotate(45deg) translate(8px, 8px);
   }
   
   &.active span:nth-child(2) {
@@ -42,7 +41,7 @@
   }
   
   &.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(9px, -9px);
+    transform: rotate(-45deg) translate(8px, -8px);
   }
   
   &:hover span {
@@ -50,7 +49,7 @@
   }
 }
 
-// X DUGME UNUTAR MENIJA (dodatno)
+// CLOSE (X) DUGME UNUTAR MENIJA
 .mobile-nav-close {
   position: absolute;
   top: 1.5rem;
@@ -60,17 +59,17 @@
   cursor: pointer;
   width: 40px;
   height: 40px;
-  padding: 0;
-  z-index: 1002;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  z-index: 1002;
+  padding: 0;
   
   &::before,
   &::after {
     content: '';
     position: absolute;
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: #FFB6D9;
     border-radius: 2px;
@@ -88,5 +87,13 @@
   &:hover::before,
   &:hover::after {
     background-color: #fff;
+  }
+}
+
+// Mobile responsivnost
+@media (max-width: 576px) {
+  .mobile-nav-close {
+    top: 1rem;
+    right: 1rem;
   }
 }
