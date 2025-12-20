@@ -1,7 +1,7 @@
 ---
 layout: about-page
 title: "O nama"
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "X"
 permalink: /o-nama/
 show_footer: true
 instagram_url: "https://instagram.com/"
@@ -22,14 +22,6 @@ team_members:
   
   - name: "Mina"
     image: "/assets/images/authors/mina.jpg"
-    bio: ""
-  
-  - name: "Iva"
-    image: "/assets/images/authors/iva.jpg"
-    bio: ""
-  
-  - name: "Ana"
-    image: "/assets/images/authors/ana.jpg"
     bio: ""
   
   - name: "Slavica"
