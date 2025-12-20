@@ -1,7 +1,7 @@
 ---
 layout: about-page
 title: "O nama"
-subtitle: "X"
+subtitle: "o nama"
 permalink: /o-nama/
 show_footer: true
 instagram_url: "https://instagram.com/"
