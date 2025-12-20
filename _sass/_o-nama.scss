@@ -1,0 +1,159 @@
+// O NAMA STRANICA - CUSTOM STILOVI
+.o-nama-page {
+  background: #ca5e91;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  
+  .main-content-box {
+    background: white;
+    border-radius: 45px;
+    padding: 3rem 2.5rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+    h2 {
+      color: #60003b;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0 0 1.5rem 0;
+      padding: 0;
+      border: none;
+    }
+    
+    p {
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: left;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .highlight-text {
+      color: #60003b;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+  }
+}
+
+// ČLANICE INICIJATIVE
+.clanice-sekcija {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+  h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.clanice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  
+  .clanica-item {
+    text-align: center;
+    
+    .clanica-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1rem;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    .clanica-ime {
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+
+// RESPONSIVNOST
+@media (max-width: 768px) {
+  .o-nama-page .main-content-box {
+    padding: 2rem 1.5rem;
+    border-radius: 30px;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    .highlight-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .clanice-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    
+    .clanica-item .clanica-avatar {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .o-nama-page {
+    padding: 1.5rem 0.75rem;
+    
+    .main-content-box {
+      padding: 1.5rem 1.25rem;
+      border-radius: 25px;
+      
+      h2 {
+        font-size: 1.3rem;
+      }
+      
+      p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+    }
+  }
+  
+  .clanice-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    
+    .clanica-item {
+      .clanica-avatar {
+        width: 90px;
+        height: 90px;
+      }
+      
+      .clanica-ime {
+        font-size: 1rem;
+      }
+    }
+  }
+}
