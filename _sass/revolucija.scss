@@ -634,15 +634,18 @@ body {
 // FOOTER
 // ============================================
 
-.page-footer {
-  background: #952F66;
+.page-footer,
+.page__footer {
+  background: #952F66 !important;
   padding: 1.5rem 1rem;
   text-align: center;
-  margin-top: 0; // Bez razmaka da ne viri pozadina
+  margin-top: 0;
   width: 100%;
   position: relative;
+  border: none !important;
   
-  .footer-follow {
+  .footer-follow,
+  .page__footer-follow {
     color: #ffffff;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
@@ -659,8 +662,32 @@ body {
     }
   }
   
-  .footer-copyright {
-    color: rgba(255, 255, 255, 0.9);
+  .footer-copyright,
+  .page__footer-copyright {
+    color: rgba(255, 255, 255, 0.9) !important;
     font-size: 0.85rem;
+  }
+  
+  // Stil za social ikone u footeru
+  .social-icons {
+    a {
+      color: #FFB6D9 !important;
+      
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+    
+    i, .svg-inline--fa {
+      color: inherit !important;
+    }
+  }
+}
+
+// Footer na single layout stranicama
+.layout--single {
+  .page__footer {
+    background: #952F66 !important;
+    margin-top: 2rem;
   }
 }
