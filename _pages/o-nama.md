@@ -1,10 +1,11 @@
 ---
 layout: about-page
 title: "O nama"
-subtitle: "o nama"
+subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+intro: "o nama"  # Ovo je nova roze traka ispod subtitle-a
 permalink: /o-nama/
 show_footer: true
-instagram_url: "https://instagram.com/"
+instagram_url: "https://instagram.com/zena.znaci.revolucija"
 
 # Call to Action tekst (pojavljuje se u roze kutiji na dnu white card-a)
 call_to_action: "Žena znači Revolucija postoji kako bi podsetila da svaka priča, svako iskustvo i svaki otpor mogu biti početak promene!"
@@ -22,6 +23,14 @@ team_members:
   
   - name: "Mina"
     image: "/assets/images/authors/mina.jpg"
+    bio: ""
+  
+  - name: "Iva"
+    image: "/assets/images/authors/iva.jpg"
+    bio: ""
+  
+  - name: "Ana"
+    image: "/assets/images/authors/ana.jpg"
     bio: ""
   
   - name: "Slavica"
