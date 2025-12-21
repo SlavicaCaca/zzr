@@ -655,9 +655,19 @@ body {
       font-weight: 600;
       letter-spacing: 1px;
       transition: opacity 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       
       &:hover {
         opacity: 0.8;
+      }
+      
+      .instagram-svg-icon {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+        vertical-align: middle;
       }
       
       i {
