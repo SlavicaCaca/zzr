@@ -631,63 +631,60 @@ body {
 
 
 // ============================================
-// FOOTER
+// CUSTOM FOOTER - VAŽI ZA SVE STRANICE
 // ============================================
 
-.page-footer,
-.page__footer {
-  background: #952F66 !important;
-  padding: 1.5rem 1rem;
+.custom-footer {
+  background: #952F66;
+  padding: 2rem 1rem;
   text-align: center;
   margin-top: 0;
   width: 100%;
-  position: relative;
-  border: none !important;
+  color: white;
   
-  .footer-follow,
-  .page__footer-follow {
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+  .footer-follow {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
     
     a {
-      color: #FFB6D9;
+      color: white;
       text-decoration: none;
-      margin-left: 0.5rem;
-      font-size: 1.2rem;
+      margin-left: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: opacity 0.2s ease;
       
       &:hover {
-        color: #ffffff;
+        opacity: 0.8;
+      }
+      
+      i {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
       }
     }
   }
   
-  .footer-copyright,
-  .page__footer-copyright {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 0.85rem;
-  }
-  
-  // Stil za social ikone u footeru
-  .social-icons {
-    a {
-      color: #FFB6D9 !important;
-      
-      &:hover {
-        color: #ffffff !important;
-      }
-    }
+  .footer-copyright {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.9rem;
+    line-height: 1.6;
     
-    i, .svg-inline--fa {
-      color: inherit !important;
+    a {
+      color: white;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
 
-// Footer na single layout stranicama
-.layout--single {
-  .page__footer {
-    background: #952F66 !important;
-    margin-top: 2rem;
-  }
+// Sakrij Minimal Mistakes footer svuda
+#footer,
+.page__footer {
+  display: none !important;
 }
