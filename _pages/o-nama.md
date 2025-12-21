@@ -14,15 +14,15 @@ team_title: "članice inicijative"
 team_members:
   - name: "Dajana"
     image: "/assets/images/authors/dajana.jpg"
-    bio: ""
+    bio: "Dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
   
   - name: "Valentina"
     image: "/assets/images/authors/val.jpg"
-    bio: ""
+    bio: "Apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
   
   - name: "Mina"
     image: "/assets/images/authors/mina.jpg"
-    bio: ""
+    bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
   
   - name: "Slavica"
     image: "/assets/images/authors/slavica.jpg"
