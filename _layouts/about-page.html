@@ -39,21 +39,89 @@
     <div class="team-section">
       <h3 class="team-title">{{ page.team_title | default: "članice inicijative" }}</h3>
       
-      <div class="team-grid">
-        {% for member in page.team_members %}
-        <div class="team-member">
-          {% if member.image %}
-          <div class="member-photo">
-            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
-          </div>
-          {% endif %}
-          <h4 class="member-name">{{ member.name }}</h4>
-          {% if member.bio %}
-          <p class="member-bio">{{ member.bio }}</p>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
+      <!-- Zameni postojeći team-grid deo sa ovim: -->
+<div class="team-grid">
+  {% for member in page.team_members %}
+  <div class="team-member" data-member="{{ forloop.index }}">
+    {% if member.image %}
+    <div class="member-photo">
+      <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+    </div>
+    {% endif %}
+    <h4 class="member-name">{{ member.name }}</h4>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Dodaj backdrop i popup IZVAN team-grid-a -->
+<div class="popup-backdrop" id="backdrop"></div>
+<div class="member-popup" id="popup">
+  <button class="popup-close" id="closePopup">×</button>
+  <div class="popup-content">
+    <div class="popup-photo">
+      <img id="popupImage" src="" alt="">
+    </div>
+    <h3 class="popup-name" id="popupName"></h3>
+    <p class="popup-bio" id="popupBio"></p>
+  </div>
+</div>
+
+<!-- JavaScript na kraju, pre </body> -->
+<script>
+  const membersData = {
+    {% for member in page.team_members %}
+    "{{ forloop.index }}": {
+      name: "{{ member.name }}",
+      image: "{{ member.image | relative_url }}",
+      bio: "{{ member.bio | strip_newlines | escape }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  const members = document.querySelectorAll('.team-member');
+  const popup = document.getElementById('popup');
+  const backdrop = document.getElementById('backdrop');
+  const closeBtn = document.getElementById('closePopup');
+  const popupImage = document.getElementById('popupImage');
+  const popupName = document.getElementById('popupName');
+  const popupBio = document.getElementById('popupBio');
+
+  function openPopup(memberKey) {
+    const member = membersData[memberKey];
+    if (member) {
+      popupImage.src = member.image;
+      popupImage.alt = member.name;
+      popupName.textContent = member.name;
+      popupBio.textContent = member.bio;
+      
+      backdrop.classList.add('active');
+      popup.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closePopup() {
+    backdrop.classList.remove('active');
+    popup.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  members.forEach(member => {
+    member.addEventListener('click', () => {
+      const memberKey = member.dataset.member;
+      openPopup(memberKey);
+    });
+  });
+
+  closeBtn.addEventListener('click', closePopup);
+  backdrop.addEventListener('click', closePopup);
+  
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && popup.classList.contains('active')) {
+      closePopup();
+    }
+  });
+</script>
     </div>
     {% endif %}
   </div>
@@ -264,6 +332,185 @@
   
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+  .team-member {
+  text-align: center;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover .member-photo {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-photo img {
+  transform: scale(1.1);
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.team-member:hover .member-name {
+  color: #FFB6D9;
+}
+
+/* Backdrop */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.popup-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup */
+.member-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: white;
+  color: #333;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 90%;
+  max-width: 500px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.member-popup.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #952F66;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.popup-close:hover {
+  background: #60003b;
+  transform: rotate(90deg);
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.popup-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #952F66;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popup-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #60003b;
+  margin: 0;
+}
+
+.popup-bio {
+  text-align: center;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .member-popup {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .popup-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .popup-name {
+    font-size: 1.4rem;
+  }
+
+  .popup-bio {
+    font-size: 0.9rem;
   }
 }
 </style>
