@@ -22,7 +22,7 @@ team_members:
   
   - name: "Mina"
     image: "/assets/images/authors/mina.jpg"
-    bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
+    bio: "Volonterka Crvenog krsta, članica organizacije /'Irida/' i studentkinja medicine."
   
   - name: "Slavica"
     image: "/assets/images/authors/slavica.jpg"
