@@ -289,8 +289,19 @@ category_archive:
   type: liquid
   path: /kategorije/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tagovi/
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category  # za kategorije
+  layouts:
+    tag: tag  # za tagove
+  permalinks:
+    category: '/kategorije/:name/'
+    tag: '/tagovi/:name/'  
 
 # Lista svih kategorija (za navigaciju)
 categories:
