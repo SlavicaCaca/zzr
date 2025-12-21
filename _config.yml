@@ -302,7 +302,7 @@ jekyll-archives:
     tag: tag
   permalinks:
     category: '/kategorije/:name/'
-    tag: '/tagovi/:name/' 
+    tag: '/tagovi/:name/'
 
 # Lista svih kategorija (za navigaciju)
 categories:
