@@ -53,6 +53,15 @@
   {% endfor %}
 </div>
 
+      <!-- Hidden preloaded images -->
+<div style="display: none;" aria-hidden="true">
+  {% for member in page.team_members %}
+    {% if member.image %}
+    <img src="{{ member.image | relative_url }}" alt="">
+    {% endif %}
+  {% endfor %}
+</div>
+
 <!-- Dodaj backdrop i popup IZVAN team-grid-a -->
 <div class="popup-backdrop" id="backdrop"></div>
 <div class="member-popup" id="popup">
