@@ -6,7 +6,7 @@ permalink: /kategorije/
 
 <div class="category-grid">
   <div class="category-card">
-    <h2><a href="/kategorije/feminizam-i-rod/" | relative_url }}>Feminizam i rod</a></h2>
+    <h2><a href="{{ '/kategorije/feminizam-i-rod/' | relative_url }}Feminizam i rod</a></h2>
     <p>Feminizam, rodna ravnopravnost, ženska prava</p>
   </div>
   
