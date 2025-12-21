@@ -10,7 +10,7 @@ instagram_url: "https://instagram.com/zena.znaci.revolucija"
 call_to_action: "Žena znači Revolucija postoji kako bi podsetila da svaka priča, svako iskustvo i svaki otpor mogu biti početak promene!"
 
 # Team Members
-team_title: "članice inicijative:"
+team_title: "članice inicijative"
 team_members:
   - name: "Dajana"
     image: "/assets/images/authors/dajana.jpg"
