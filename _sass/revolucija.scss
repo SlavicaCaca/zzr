@@ -58,12 +58,13 @@ body {
 
 // GLAVNI KONTEJNER
 .grid-gallery-page {
-  background: transparent;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
+     background: #ca5e91 !important;
+     min-height: 100vh;
+     padding: 0;
+     margin: 0;
+     width: 100%;
+     flex: 1;
+   }
 
 // ============================================
 // HEADER SEKCIJA
@@ -649,6 +650,7 @@ body {
   position: relative;
   left: 0;
   right: 0;
+  margin-top: auto;
   
   .footer-follow {
     font-size: 1.1rem;
