@@ -181,22 +181,8 @@
         {% endif %}
         
       </div>
-
-      <!-- Footer (opciono) -->
-      {% if page.show_footer %}
-      <div class="page-footer">
-        <div class="footer-follow">
-          FOLLOW: 
-          {% if page.instagram_url %}
-          <a href="{{ page.instagram_url }}" target="_blank" rel="noopener">📷</a>
-          {% endif %}
-        </div>
-        <div class="footer-copyright">copyright</div>
-      </div>
-      {% endif %}
-
     </div>
-
+    {% include custom-footer.html %}
     {% include scripts.html %}
     
   </body>
