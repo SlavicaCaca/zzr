@@ -71,9 +71,9 @@
   const membersData = {
     {% for member in page.team_members %}
     "{{ forloop.index }}": {
-      name: "{{ member.name }}",
+      name: {{ member.name | jsonify }},
       image: "{{ member.image | relative_url }}",
-      bio: "{{ member.bio | strip_newlines | escape }}"
+      bio: {{ member.bio | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
