@@ -32,10 +32,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 // TELO STRANICE
+html, body {
+     background: #ca5e91 !important;
+     color: #fff;
+     min-height: 100%;
+   }
 body {
-  background: #ca5e91;
-  color: #fff;
-}
+     display: flex;
+     flex-direction: column;
+   }
 
 .page__title a {
   color: #fff;
