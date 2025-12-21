@@ -1,3 +1,4 @@
+markdown
 ---
 layout: single
 title: "Sve kategorije"
