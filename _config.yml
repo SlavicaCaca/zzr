@@ -350,11 +350,11 @@ defaults:
       related: true
 # Navigacija
 navigation:
-  - title: "Početna"
+  - title: "početna"
     url: /
-  - title: "O nama"
+  - title: "o nama"
     url: /o-nama/
-  - title: "Projekti"  
+  - title: "projekti"  
     url: /projekti/
 
     
