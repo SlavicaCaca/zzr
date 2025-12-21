@@ -4,10 +4,21 @@ title: "Svi tagovi"
 permalink: /tagovi/
 ---
 
+## Jekyll Archives Debug:
+
+Plugin enabled: {{ site.jekyll-archives.enabled }}
+
+Tagovi koje Jekyll vidi:
+{% for tag in site.tags %}
+- **{{ tag[0] }}** ({{ tag[1].size }} postova)
+{% endfor %}
+
+---
+
 <div class="tags-cloud">
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
-    <a href="{{ tag[0] | slugify | prepend: '/' | prepend: '/tagovi' | relative_url }}" class="tag-badge">
+    <a href="{{ tag[0] | slugify | append: '/' | prepend: site.tag_archive.path | relative_url }}" class="tag-badge">
       {{ tag[0] }} <span class="tag-count">({{ tag[1].size }})</span>
     </a>
   {% endfor %}
@@ -43,3 +54,12 @@ permalink: /tagovi/
   font-size: 0.85em;
 }
 </style>
+```
+
+Commit i otvori `/zzr/tagovi/` - šta piše kod "Plugin enabled:"?
+
+## 2. Proveri GitHub Actions
+
+Idi na **Actions → poslednji workflow** i traži tekst:
+```
+Jekyll Archives
