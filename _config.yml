@@ -22,7 +22,7 @@ title_image              : "/assets/images/title-logo.png"
 title_separator          : "-"
 subtitle                 : "digitalni prostor posvećen aktivističkim i feminističkim temama"
 name                     : #"Žena Znači Revolucija"
-description              : #"An amazing website."
+description              : "Neformalna feministička inicijativa posvećena stvaranju prostora u kojem se govori o temama o kojima se ne govori dovoljno - rodna ravnopravnost, borba protiv nasilja, aktivizam i zajednica."
 url                      : "https://zenaznacirevlucija.rs"
 baseurl                  : #
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
