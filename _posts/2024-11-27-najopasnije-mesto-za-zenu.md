@@ -8,6 +8,8 @@ author_profile: true
 header:
   teaser: /assets/images/dom.png
 ---
+Najopasnije mesto za ženu je njen dom
+
 
 Juče je u Boljevcima ubijena žena u kući u kojoj je živela.
 
