@@ -722,7 +722,7 @@ body {
 
 
 // ============================================
-// TAXONOMY META - IKONICE I STILOVI
+// TAXONOMY META - IKONICE SA PSEUDO-ELEMENTIMA
 // ============================================
 
 .page__taxonomy,
@@ -732,12 +732,8 @@ body {
   gap: 0.5rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
-  
-  i {
-    color: #ca5e91;
-    font-size: 1rem;
-    flex-shrink: 0;
-  }
+  position: relative;
+  padding-left: 1.8rem;
   
   strong {
     color: white;
@@ -748,13 +744,38 @@ body {
   time {
     color: rgba(255, 255, 255, 0.9);
   }
-}
-
-.page__taxonomy {
+  
   span.sep {
     margin: 0 0.25rem;
     color: rgba(255, 255, 255, 0.5);
   }
+}
+
+// KATEGORIJE IKONICA
+.page__taxonomy--category::before {
+  content: "📁";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+// TAGOVI IKONICA
+.page__taxonomy--tags::before {
+  content: "🏷️";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+// DATUM IKONICA
+.page__date::before {
+  content: "📅";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 // Responsive
@@ -762,9 +783,10 @@ body {
   .page__taxonomy,
   .page__date {
     font-size: 0.9rem;
+    padding-left: 1.5rem;
     
-    i {
-      font-size: 0.9rem;
+    &::before {
+      font-size: 1rem;
     }
   }
 }
