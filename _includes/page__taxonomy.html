@@ -8,9 +8,8 @@
 {% if site.category_archive.path %}
   {% assign categories_sorted = page.categories | sort_natural %}
 
-  <p class="page__taxonomy">
-    <i class="fas fa-folder-open"></i>
-    <strong>{{ site.data.ui-text[site.locale].categories_label | default: "Kategorije:" }}</strong>
+  <p class="page__taxonomy page__taxonomy--category">
+    <strong>Kategorije:</strong>
     <span itemprop="keywords">
     {% for category_word in categories_sorted %}
       <a href="{{ category_word | slugify | prepend: '/' | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
@@ -29,9 +28,8 @@
 {% if site.tag_archive.path %}
   {% assign tags_sorted = page.tags | sort_natural %}
 
-  <p class="page__taxonomy">
-    <i class="fas fa-tags"></i>
-    <strong>{{ site.data.ui-text[site.locale].tags_label | default: "Tagovi:" }}</strong>
+  <p class="page__taxonomy page__taxonomy--tags">
+    <strong>Tagovi:</strong>
     <span itemprop="keywords">
     {% for tag_word in tags_sorted %}
       <a href="{{ tag_word | slugify | append: '/' | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
