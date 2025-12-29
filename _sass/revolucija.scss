@@ -794,3 +794,329 @@ body {
     }
   }
 }
+
+
+// ============================================
+// POST CONTENT CARD STYLING
+// ============================================
+
+// Dodaj roze pozadinu za single post stranice
+body.layout--single {
+  background: #ca5e91 !important;
+  
+  #main {
+    background: transparent !important;
+  }
+}
+
+// Stilizuj glavni content area
+.layout--single {
+  
+  .page {
+    // Sidebar ostaje sa strane
+    @include breakpoint($large) {
+      float: inline-end;
+      width: calc(100% - #{$right-sidebar-width-narrow});
+      padding-inline-end: $right-sidebar-width-narrow;
+    }
+
+    @include breakpoint($x-large) {
+      width: calc(100% - #{$right-sidebar-width});
+      padding-inline-end: $right-sidebar-width;
+    }
+  }
+  
+  // Beli card za sadržaj posta
+  .page__inner-wrap {
+    background: white;
+    border-radius: 45px;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #333;
+    
+    @media (max-width: 768px) {
+      padding: 2rem 1.5rem;
+      border-radius: 30px;
+      margin: 1rem;
+    }
+    
+    @media (max-width: 576px) {
+      padding: 1.5rem 1.25rem;
+      border-radius: 25px;
+      margin: 0.75rem;
+    }
+  }
+  
+  // Header unutar card-a
+  header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .page__title {
+    color: #60003b;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
+  }
+  
+  // Meta informacije (datum, read time)
+  .page__meta {
+    color: #666 !important;
+    font-size: 0.9rem;
+    
+    a {
+      color: #952F66;
+      text-decoration: none;
+      
+      &:hover {
+        color: #60003b;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  // Glavni sadržaj posta
+  .page__content {
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    
+    p {
+      margin-bottom: 1.5rem;
+    }
+    
+    strong {
+      color: #60003b;
+      font-weight: 600;
+    }
+    
+    h2, h3, h4, h5, h6 {
+      color: #60003b;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 0.5rem;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+    
+    h4 {
+      font-size: 1.25rem;
+    }
+    
+    a {
+      color: #952F66;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(149, 47, 102, 0.3);
+      
+      &:hover {
+        color: #60003b;
+        border-bottom-color: #60003b;
+      }
+    }
+    
+    blockquote {
+      background: #f9f9f9;
+      border-left: 4px solid #952F66;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      color: #555;
+      font-style: italic;
+    }
+    
+    code {
+      background: #f5f5f5;
+      color: #952F66;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    
+    pre {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      
+      code {
+        background: none;
+        padding: 0;
+      }
+    }
+    
+    ul, ol {
+      margin-bottom: 1.5rem;
+      padding-left: 2rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+    
+    img {
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 1.5rem 0;
+    }
+  }
+  
+  // Footer sekcija sa taxonomy
+  .page__meta {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #f0f0f0;
+  }
+  
+  // Taxonomy items (kategorije i tagovi)
+  .page__taxonomy {
+    margin-bottom: 1rem;
+    
+    strong {
+      color: #60003b;
+    }
+  }
+  
+  .page__taxonomy-item {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: #952F66;
+    color: white !important;
+    border-radius: 21px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: #60003b;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(96, 0, 59, 0.3);
+    }
+  }
+  
+  // Social share buttons
+  .page__share {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #f0f0f0;
+    
+    .page__share-title {
+      color: #60003b;
+      font-weight: 600;
+    }
+  }
+  
+  // Pagination (next/prev post)
+  .pagination {
+    margin-top: 2rem;
+    
+    .pagination--pager {
+      background: #952F66;
+      color: white !important;
+      border: none;
+      
+      &:hover {
+        background: #60003b;
+      }
+      
+      &.disabled {
+        background: #ccc;
+        color: #666 !important;
+      }
+    }
+  }
+}
+
+// Sidebar ostaje kao što je
+.sidebar {
+  background: transparent;
+  
+  .author__avatar img {
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .author__content,
+  .author__urls-wrapper {
+    color: white;
+  }
+  
+  .author__name {
+    color: white;
+  }
+  
+  .author__bio {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .author__urls {
+    a {
+      color: white;
+      
+      &:hover {
+        color: #FFB6D9;
+      }
+    }
+  }
+}
+
+// Related posts section
+.page__related {
+  background: white;
+  border-radius: 45px;
+  padding: 2rem;
+  margin: 2rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 30px;
+    margin: 1.5rem 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 1rem 0.75rem;
+  }
+  
+  .page__related-title {
+    color: #60003b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .archive__item-title {
+    a {
+      color: #60003b;
+      text-decoration: none;
+      
+      &:hover {
+        color: #952F66;
+      }
+    }
+  }
+}
