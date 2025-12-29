@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Žena Znači Revolucija"
+title                    : "Žena Znači Revolucija!"
 title_image              : "/assets/images/title-logo.png"
 title_separator          : "-"
 subtitle                 : "digitalni prostor posvećen aktivističkim i feminističkim temama"
@@ -32,7 +32,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : "Žena Znači Revolucija"
+copyright                : "Žena Znači Revolucija!"
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
