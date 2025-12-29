@@ -8,6 +8,9 @@ show_footer: true
 show_posts: true 
 show_footer: true
 instagram_url: "https://instagram.com/your_account"
+header:
+  image: /assets/images/og-image.png
+  og_image: /assets/images/og-image.png
 
 gallery_items:
   # Red 1
