@@ -96,7 +96,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/og-image.png"  # Slika koja će se pojaviti (1200x630px)
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
