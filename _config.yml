@@ -28,19 +28,11 @@ teaser                   : "/assets/images/logo.png"
 logo                     : "/assets/images/logo.png"
 masthead_title           : # ostavite prazno
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : "/assets/images/og-image.png"  # Slika koja će se pojaviti (1200x630px)
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type: Organization
+  name: "Žena Znači Revolucija"
+  links:
+    - "https://instagram.com/zena.znaci.revolucija"
 
 # Analytics
 analytics:
