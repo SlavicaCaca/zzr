@@ -977,23 +977,4 @@ body {
       padding-left: 1em !important;
     }
   }
-  
-  // Content area - ukloni dupli padding
-  .page {
-    @include breakpoint($large) {
-      padding-inline-end: 0 !important;
-      padding-inline-start: 0 !important;
-    }
-
-    @include breakpoint($x-large) {
-      padding-inline-end: 0 !important;
-      padding-inline-start: 0 !important;
-    }
-  }
-  
-  // Beli card - 1em razmak sa desne strane
-  .page__content {
-   // margin-left: 1em;
-    margin-right: 1em;
-  }
 }
