@@ -929,3 +929,30 @@ body {
 .page .page__inner-wrap {
    margin-top: -0.7em;
 }
+
+// ============================================
+// PRVI PARAGRAF KAO NASLOV
+// ============================================
+
+.layout--single {
+  .page__content {
+    
+    // Prvi paragraf stilizovan kao naslov
+    > p:first-of-type {
+      color: #60003b !important;
+      font-weight: 700 !important;
+      font-size: 1.8rem !important;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+      
+      @media (max-width: 768px) {
+        font-size: 1.5rem !important;
+      }
+      
+      @media (max-width: 576px) {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+}
