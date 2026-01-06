@@ -813,6 +813,14 @@ body {
     color: #333;
     font-size: 1.05rem;
     line-height: 1.8;
+    > h1:first-child,
+    > h2:first-child {
+    color: #60003b;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
     
     @media (max-width: 768px) {
       padding: 2rem 1.5rem;
@@ -916,4 +924,8 @@ body {
 
 #main {
   max-width: 100% !important;
+}
+
+.page .page__inner-wrap {
+   margin-top: -0.7em;
 }
