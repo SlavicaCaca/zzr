@@ -964,3 +964,37 @@ body {
     padding-inline-start: 1em !important;
   }
 }
+
+// ============================================
+// SIMETRIČAN RAZMAK - SIDEBAR I CONTENT
+// ============================================
+
+.layout--single {
+  
+  // Sidebar - 1em sa leve strane
+  .sidebar {
+    @include breakpoint($large) {
+      padding-left: 1em !important;
+      padding-right: 1em !important; // razmak prema content-u
+    }
+  }
+  
+  // Content area - ukloni dupli padding
+  .page {
+    @include breakpoint($large) {
+      padding-inline-end: 0 !important;
+      padding-inline-start: 0 !important;
+    }
+
+    @include breakpoint($x-large) {
+      padding-inline-end: 0 !important;
+      padding-inline-start: 0 !important;
+    }
+  }
+  
+  // Beli card - 1em razmak sa desne strane
+  .page__content {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
