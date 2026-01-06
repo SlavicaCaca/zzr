@@ -975,7 +975,6 @@ body {
   .sidebar {
     @include breakpoint($large) {
       padding-left: 1em !important;
-      padding-right: 1em !important; // razmak prema content-u
     }
   }
   
@@ -993,8 +992,8 @@ body {
   }
   
   // Beli card - 1em razmak sa desne strane
-  .page__content {
-    margin-left: 1em;
-    margin-right: 1em;
+  //.page__content {
+   // margin-left: 1em;
+   // margin-right: 1em;
   }
 }
