@@ -182,7 +182,7 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
   category: 'posts'
-  tag: ''
+  #tag: ''
   locale: ''
   trail:
     before: 2
@@ -220,20 +220,20 @@ whitelist:
 category_archive:
   type: jekyll-archives
   path: /kategorije/
-tag_archive:
-  type: jekyll-archives
-  path: /tagovi/
+#tag_archive:
+ # type: jekyll-archives
+  #path: /tagovi/
 
 jekyll-archives:
   enabled:
     - categories
-    - tags
+    #- tags
   layouts:
     category: category
-    tag: tag
+    #tag: tag
   permalinks:
     category: '/kategorije/:name/'
-    tag: '/tagovi/:name/'
+    #tag: '/tagovi/:name/'
 
 # Lista svih kategorija (za navigaciju)
 categories:
