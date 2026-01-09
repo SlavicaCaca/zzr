@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }} pdf-page-active">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+
+    <div class="pdf-page-wrapper">
+      <!-- Gornji subtitle (roze traka) -->
+      {% if page.subtitle %}
+      <div class="top-subtitle-bar">
+        <p>{{ page.subtitle }}</p>
+      </div>
+      {% endif %}
+
+      <!-- Intro tekst (roze sekcija) -->
+      {% if page.intro %}
+      <div class="content-intro">
+        <div class="highlight-intro">{{ page.intro }}</div>
+      </div>
+      {% endif %}
+
+      <div class="pdf-content">
+        <!-- Tekst iznad PDF-a -->
+        {% if content %}
+        <div class="pdf-description">
+          {{ content }}
+        </div>
+        {% endif %}
+
+        <!-- PDF Container -->
+        <div class="pdf-container">
+          <!-- Akcioni dugmići -->
+          <div class="pdf-actions">
+            <a href="{{ page.pdf_file | relative_url }}" 
+               class="btn-download" 
+               download>
+              📥 Preuzmi PDF
+            </a>
+            <a href="{{ page.pdf_file | relative_url }}" 
+               class="btn-open" 
+               target="_blank">
+              👁️ Otvori u novom tabu
+            </a>
+          </div>
+          
+          <!-- PDF Viewer -->
+          <div class="pdf-viewer">
+            <iframe 
+              src="{{ page.pdf_file | relative_url }}" 
+              width="100%" 
+              height="800px" 
+              frameborder="0">
+              <p>Tvoj browser ne podržava prikaz PDF-a. 
+                 <a href="{{ page.pdf_file | relative_url }}">Preuzmi dokument</a>
+              </p>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      {% include custom-footer.html %}
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>
+
+<style>
+/* ============================================
+   PDF PAGE STILOVI
+   ============================================ */
+
+.pdf-page-wrapper {
+  background: #ca5e91;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.pdf-page-wrapper .top-subtitle-bar {
+  background: #ca5e91;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  
+  p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-style: italic;
+    margin: -5px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.pdf-page-wrapper .content-intro {
+  background: #ca5e91;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.pdf-page-wrapper .highlight-intro {
+  background-color: #952F66;
+  color: white;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
+}
+
+.pdf-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.pdf-description {
+  background: white;
+  border-radius: 25px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #333;
+  line-height: 1.8;
+  
+  h2, h3 {
+    color: #60003b;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  strong {
+    color: #952F66;
+  }
+}
+
+.pdf-container {
+  background: white;
+  border-radius: 45px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-download,
+.btn-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #952F66;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  
+  &:hover {
+    background: #60003b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.pdf-viewer {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  
+  iframe {
+    display: block;
+    width: 100%;
+    min-height: 800px;
+  }
+}
+
+/* RESPONSIVNOST */
+@media (max-width: 768px) {
+  .pdf-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .pdf-description {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .pdf-container {
+    padding: 1.5rem;
+    border-radius: 30px;
+  }
+  
+  .pdf-viewer iframe {
+    min-height: 600px;
+  }
+  
+  .btn-download,
+  .btn-open {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pdf-content {
+    padding: 1rem 0.75rem;
+  }
+  
+  .pdf-description {
+    padding: 1.25rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .pdf-container {
+    padding: 1.25rem;
+    border-radius: 25px;
+  }
+  
+  .pdf-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn-download,
+  .btn-open {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    justify-content: center;
+  }
+  
+  .pdf-viewer iframe {
+    min-height: 500px;
+  }
+}
+</style>
