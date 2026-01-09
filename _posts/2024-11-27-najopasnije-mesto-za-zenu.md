@@ -3,7 +3,6 @@ layout: single
 date: 2025-10-05
 author: "dajana"
 categories: [feminizam-i-rod]
-tags: [društvo, ljudska-prava]
 author_profile: true
 header:
   teaser: /assets/images/dom.png
