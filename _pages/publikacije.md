@@ -13,5 +13,4 @@ gallery_items:
     link: /publikacije/prirucnik/
     title: "Priručnik za bezbedan (prvi) ginekološki pregled za sve mlade"
     show_overlay: true
-    subtitle: "Kratak opis"
 ---
