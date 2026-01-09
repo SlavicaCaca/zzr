@@ -1,6 +1,6 @@
 ---
-layout: about-page
+layout: single
 title: "prvi ginekološki pregled"
 intro: "prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
-permalink: /_pages/prvi-ginekoloski-pregled/
+permalink: /prvi-ginekoloski-pregled/
 ---
