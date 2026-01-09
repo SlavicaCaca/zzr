@@ -566,9 +566,9 @@ body {
     .footer-copyright {
       font-size: 0.8rem;
     }
-      .page .page__inner-wrap {
-     padding: 1.25rem 1rem;
-    }
+  }
+  #main {
+    padding-inline: 0em;
   }
 }
 
@@ -593,8 +593,8 @@ body {
   .grid-container {
     padding: 1rem 0.75rem;
   }
-  .page .page__inner-wrap {
-   padding: 1.25rem 1rem;
+  #main {
+    padding-inline: 0em;
   }
 }
 
