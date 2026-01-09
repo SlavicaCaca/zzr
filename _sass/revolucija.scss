@@ -782,15 +782,6 @@ body {
   line-height: 1;
 }
 
-// TAGOVI IKONICA
-.page__taxonomy--tags::before {
-  content: "🏷️";
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
 // DATUM IKONICA
 .page__date::before {
   content: "📅";
