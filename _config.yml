@@ -295,12 +295,12 @@ defaults:
 navigation:
   - title: "početna"
     url: /
-  - title: "o nama"
-    url: /o-nama/
   - title: "projekti"  
     url: /projekti/
   - title: "publikacije"  
     url: /publikacije/
+  - title: "o nama"
+    url: /o-nama/
 
     
 head_scripts:
