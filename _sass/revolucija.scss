@@ -570,6 +570,9 @@ body {
   #main {
     padding-inline: 0em;
   }
+    .sidebar {
+    padding-inline: 1em;
+  }
 }
 
 @media (max-width: 375px) {
@@ -595,6 +598,9 @@ body {
   }
   #main {
     padding-inline: 0em;
+  }
+  .sidebar {
+    padding-inline: 1em;
   }
 }
 
