@@ -4,9 +4,8 @@ title: "Tribina: Prvi ginekološki pregled"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 intro: "video tribina: prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
 permalink: /projekti/prvi-ginekoloski-pregled/video-tribina/
-video_platform: youtube  # ili "vimeo" ili "custom"
-video_id: tvoj_youtube_id  # Ako je YouTube
-# video_file: /assets/videos/tribina.mp4  # Ako je custom upload
+video_platform: custom
+video_file: /assets/videos/tribina.mp4  # Ako je custom upload
 show_footer: true
 ---
 
