@@ -9,10 +9,11 @@ show_posts: false
 show_footer: true
 
 gallery_items:
-  # Red 1
+  # Projekat 1: Prvi ginekološki pregled
   - image: /assets/images/kod-ginekologa.png
-    link: /prvi-ginekoloski-pregled/
-    title: "Prvi ginekološki pregled"  # Alt tekst za pristupačnost
+    link: /projekti/prvi-ginekoloski-pregled/
+    title: "Prvi ginekološki pregled"
+    show_overlay: true
   
   
 ---
