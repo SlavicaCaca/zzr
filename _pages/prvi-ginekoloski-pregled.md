@@ -9,26 +9,16 @@ show_posts: false
 show_footer: true
 
 gallery_items:
-  # PDF kartica
-  - image: /assets/images/pdf-cover-pregled.png
-    link: /projekti/prvi-ginekoloski-pregled/prezentacija/
-    title: "Prezentacija"
+  # PDF prezentacija
+  - image: /assets/images/pdf-analiza-cover.png
+    link: /projekti/prvi-ginekoloski-pregled/analiza-iskustava/
+    title: "Analiza iskustava sa prvog ginekološkog pregleda"
     show_overlay: true
     subtitle: "PDF prezentacija"
   
-  # Video kartica
-  - image: /assets/images/video-cover-pregled.png
-    link: https://www.youtube.com/watch?v=VIDEO_ID  # ili tvoj link
-    title: "Tribina"
+  # Video tribina
+  - image: /assets/images/video-tribina-cover.png
+    link: /projekti/prvi-ginekoloski-pregled/video-tribina/
+    title: "Tribina: Prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
     show_overlay: true
-    subtitle: "Pogledaj video"
 ---
-
-## O projektu
-
-Ovde možeš dodati kratak opis projekta "Prvi ginekološki pregled".
-
-Šta sadrži:
-- Edukativni priručnik u PDF formatu
-- Video materijal sa korisnim savetima
-- Dodatne informacije i resursi
