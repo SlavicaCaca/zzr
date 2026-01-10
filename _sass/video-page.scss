@@ -1,0 +1,138 @@
+.video-page-wrapper {
+  background: #ca5e91;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.video-page-wrapper .top-subtitle-bar {
+  background: #ca5e91;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.video-page-wrapper .top-subtitle-bar p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.3rem;
+  font-weight: 100;
+  font-style: italic;
+  margin: -5px;
+  letter-spacing: 0.3px;
+}
+
+.video-page-wrapper .content-intro {
+  background: #ca5e91;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.video-page-wrapper .highlight-intro {
+  background-color: #952F66;
+  color: white;
+  padding: 0.2rem 1rem;
+  font-weight: 500;
+}
+
+.video-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.video-description {
+  background: white;
+  border-radius: 25px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #333;
+  line-height: 1.8;
+}
+
+.video-description h2,
+.video-description h3 {
+  color: #60003b;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.video-description p {
+  margin-bottom: 1rem;
+}
+
+.video-description strong {
+  color: #952F66;
+}
+
+.video-description ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.video-description li {
+  margin-bottom: 0.5rem;
+}
+
+.video-container {
+  background: white;
+  border-radius: 45px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #000;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* RESPONSIVNOST */
+@media (max-width: 768px) {
+  .video-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .video-description {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .video-container {
+    padding: 1.5rem;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-content {
+    padding: 1rem 0.75rem;
+  }
+  
+  .video-description {
+    padding: 1.25rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .video-container {
+    padding: 1.25rem;
+    border-radius: 25px;
+  }
+}
