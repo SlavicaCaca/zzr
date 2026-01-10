@@ -21,4 +21,5 @@ gallery_items:
     link: /projekti/prvi-ginekoloski-pregled/video-tribina/
     title: "Tribina: Prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
     show_overlay: true
+    subtitle: "Video snimak"
 ---
