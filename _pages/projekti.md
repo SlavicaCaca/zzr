@@ -12,7 +12,6 @@ gallery_items:
   # Projekat 1: Prvi ginekološki pregled
   - image: /assets/images/kod-ginekologa.png
     link: /projekti/prvi-ginekoloski-pregled/
-    title: "Prvi ginekološki pregled"
     show_overlay: true
   
   
