@@ -30,7 +30,7 @@ Ljiljana Pnatović (medicinska antropološkinja i naučna saradnica Instituta za
 
 <div class="instagram-cta">
   <p class="cta-text">Video je dostupan na našem Instagram nalogu</p>
-  <a href="https://www.instagram.com/reel/DMyGf8jt7pS/" 
+  <a href="https://www.instagram.com/reel/DMyGf8jt7pS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
      target="_blank" 
      rel="noopener noreferrer"
      class="btn-instagram">
