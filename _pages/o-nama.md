@@ -29,7 +29,7 @@ team_members:
     bio: ""
 ---
 
-Žena znači Revolucija! je neformalna feministička inicijativa posvećena stvaranju prostora u kojem se govori o temama o kojima se ne govori dovoljno.
+<span class="highlight-text">Žena znači Revolucija!</span> je neformalna feministička inicijativa posvećena stvaranju prostora u kojem se govori o temama o kojima se ne govori dovoljno.
 
 Kroz tekstove, edukacije, javne razgovore i digitalne kampanje, ŽzR se bavi temama rodne ravnopravnosti, borbe protiv rodno zasnovanog nasilja, mizoginije, seksizma i diskriminacije.
 
