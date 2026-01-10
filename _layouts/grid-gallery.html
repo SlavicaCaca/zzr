@@ -3,6 +3,19 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      /* Inline critical CSS */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .masthead,
+      .page__footer-follow,
+      .sidebar {
+        display: none !important;
+      }
+
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }} grid-gallery-active">
