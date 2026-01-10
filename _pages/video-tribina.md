@@ -20,8 +20,8 @@ Snimak tribine u kojoj učesnice dele svoja lična iskustva, govore o najčešć
 - Sistemski problemi i predlozi rešenja
 
 **Gošće:**  
-Marina Mijatović (advokatica i narodna poslanica ZLF)
-Ljiljana Pnatović (medicinska antropološkinja i naučna saradnica Instituta za društvenu teoriju, Univerzitet u Beogradu)
+Marina Mijatović (advokatica i narodna poslanica ZLF)  
+Ljiljana Pantović (medicinska antropološkinja i naučna saradnica Instituta za društvenu teoriju, Univerzitet u Beogradu)
 
 **Datum održavanja:**  
 31.07.2025.
