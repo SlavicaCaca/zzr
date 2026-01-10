@@ -1,7 +1,6 @@
 ---
 layout: about-page
 title: "Tribina: Prvi ginekološki pregled"
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 intro: "video tribina: prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
 permalink: /projekti/prvi-ginekoloski-pregled/video-tribina/
 show_footer: true
