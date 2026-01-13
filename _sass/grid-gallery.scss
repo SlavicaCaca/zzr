@@ -1,12 +1,14 @@
-
-      /* Inline critical CSS */
-      body {
-        margin: 0;
-        padding: 0;
-      }
+/* Inline critical CSS */
+body {
+    margin: 0;
+    padding: 0;
+}
       
-      .masthead,
-      .page__footer-follow,
-      .sidebar {
-        display: none !important;
-      }
+// Primenjuje se SAMO na grid-gallery stranicama
+.grid-gallery-active {
+  .masthead,
+  .page__footer-follow,
+  .sidebar {
+    display: none !important;
+  }
+}
