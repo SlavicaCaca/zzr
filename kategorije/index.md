@@ -11,13 +11,8 @@ permalink: /kategorije/
   </div>
   
   <div class="category-card">
-    <h2><a href="{{ '/kategorije/lgbtq/' | relative_url }}">LGBTQ+ teme</a></h2>
-    <p>LGBTQ+ zajednica, kvir aktivizam, rodna raznolikost</p>
-  </div>
-  
-  <div class="category-card">
-    <h2><a href="{{ '/kategorije/aktivizam/' | relative_url }}">Aktivizam</a></h2>
-    <p>Ženski aktivizam, društvena pravda, protesti</p>
+    <h2><a href="{{ '/kategorije/kvir-aktivizam/' | relative_url }}">Kvir aktivizam</a></h2>
+    <p>LGBTQ+ zajednica, kvir aktivizam</p>
   </div>
   
   <div class="category-card">
@@ -36,7 +31,7 @@ permalink: /kategorije/
   </div>
   
   <div class="category-card">
-    <h2><a href="{{ '/kategorije/teorija/' | relative_url }}">Teorija</a></h2>
+    <h2><a href="{{ '/kategorije/feministicka-teorija/' | relative_url }}">Feministička teorija</a></h2>
     <p>Feministička teorija, kritička analiza, filozofija</p>
   </div>
   
