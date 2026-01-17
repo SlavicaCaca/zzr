@@ -6,7 +6,7 @@ permalink: /projekti/prvi-ginekoloski-pregled/video-tribina/
 show_footer: true
 ---
 
-## O tribini
+**O tribini**
 
 **"Prvi ginekološki pregled: lična iskustva, strahovi i sistemski propusti"**
 
