@@ -1,7 +1,7 @@
 ---
 layout: grid-gallery
 title: "Femicid"
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "digitalni prostor posvecen kvir aktivizmu i feminizmu"
 intro: "članci o femicidu i prevenciji"
 show_posts: true
 filter_category: femicid
