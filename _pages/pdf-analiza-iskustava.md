@@ -1,7 +1,7 @@
 ---
 layout: pdf-page
 title: "Analiza iskustava sa prvog ginekološkog pregleda"
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "digitalni prostor posvecen kvir aktivizmu i feminizmu"
 intro: "analiza iskustava - prvi ginekološki pregled"
 permalink: /projekti/prvi-ginekoloski-pregled/analiza-iskustava/
 pdf_file: /assets/pdfs/analiza-iskustava.pdf
