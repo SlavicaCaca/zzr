@@ -4,7 +4,6 @@ date: 2025-10-05
 author: "dajana"
 categories: [femicid, nasilje]
 author_profile: true
-related: false
 header:
   teaser: /assets/images/dom.png
 ---
