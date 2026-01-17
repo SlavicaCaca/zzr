@@ -16,6 +16,6 @@ Prema podacima Femicid memorijala (Autonomni ženski centar), oko 52% žena ubij
 
 Zašto žene nisu bezbedne u svojim domovima? lako bi trebalo da bude sigurno utočište, dom cesto postaje mesto gde nasilje eskalira zbog kombinacije blizine, institucionalnih slabosti i neprepoznatih znakova rizika. Blizina i svakodnevni kontakt sa nasilnikom olaksavaju kontrolu i nadzor, dok zakonske i institucionalne mere zaštite često nisu dovoljno fleksibilne ni nadzirane da bi zaustavile nasilje. Zanemarivanje ranih znakova nasilja povećava rizik da nasilje eskalira u femicid.
 
-"Muško nasilje nad ženama je oblik nasilja bez povoda. Ono ne zavisi od ponašanja žrtve, već proizilazi iz društvenih struktura i normi. Nasilje nad ženama nije individualni i lični problem žena, već društveni problem."- Lepa Mladenovic
+"Muško nasilje nad ženama je oblik nasilja bez povoda. Ono ne zavisi od ponašanja žrtve, već proizilazi iz društvenih struktura i normi. Nasilje nad ženama nije individualni i lični problem žena, već društveni problem."- Lepa Mlađenović
 
 Svaka reakcija društva, institucionalna, zakonska kao i kroz samo podizanje svesti je ključna. Prepoznavanje i razumevanje nasilja, kao i kontinuirana zaštita, jedini su načini da se spreče femicidi i ženama omogući sigurnost u prostoru koji bi trebalo da bude njihov dom.
