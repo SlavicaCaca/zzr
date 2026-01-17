@@ -13,8 +13,12 @@ permalink: /kategorije/
   <div class="category-card">
     <h2><a href="{{ '/kategorije/kvir-aktivizam/' | relative_url }}">Kvir aktivizam</a></h2>
     <p>LGBTQ+ zajednica, kvir aktivizam</p>
+
+  </div>  <div class="category-card">
+    <h2><a href="{{ '/kategorije/femicid/' | relative_url }}">Femicid</a></h2>
+    <p>Femicid, rodno nasilje, pamćenje žrtava, borba za pravdu</p>
   </div>
-  
+
   <div class="category-card">
     <h2><a href="{{ '/kategorije/nasilje/' | relative_url }}">Nasilje</a></h2>
     <p>Rodno nasilje, sistemski problemi, prevencija</p>
