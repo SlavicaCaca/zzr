@@ -10,10 +10,10 @@ show_footer: true
 
 **"Prvi ginekološki pregled: lična iskustva, strahovi i sistemski propusti"**
 
-Snimak tribine u kojoj učesnice dele svoja lična iskustva, govore o najčešćim strahovima koji prate prvi ginekološki pregled, i analiziraju sistemske propuste u zdravstvenom sistemu.
+Snimak tribine na kojoj smo podelile rezultate anonimne ankete na temu iskustava ispitanica i ispitanika sa prvog ginekološkog pregleda, delile smo svoja lična iskustva, govorile o najčešćim strahovima koji prate prvi ginekološki pregled i analizirale sistemske propuste u zdravstvenom sistemu.
 
-**Teme koje se obrađuju:**
-- Lična iskustva sa prvog pregleda
+**Teme koje smo obrađivale:**
+- Lična iskustva sa prvog ginekološkog pregleda
 - Psihološki aspekt i strah od nepoznatog
 - Informisanost mladih o reproduktivnom zdravlju
 - Odnos lekara i pacijenata
