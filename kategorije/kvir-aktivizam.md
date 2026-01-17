@@ -1,10 +1,10 @@
 ---
 layout: grid-gallery
-title: "LGBTQ+ teme"
+title: "Kvir aktivizam"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
-intro: "Članci o LGBTQ+ zajednici"
+intro: "Članci o Kvir aktivizmu"
 show_posts: true
-filter_category: lgbtq
-permalink: /kategorije/lgbtq/
+filter_category: kvir-aktivizam
+permalink: /kategorije/kvir-aktivizam/
 show_footer: true
 ---
