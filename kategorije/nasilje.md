@@ -2,7 +2,7 @@
 layout: grid-gallery
 title: "Nasilje i sistemski problemi"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
-intro: "Članci o rodnom nasilju i sistemskim problemima"
+intro: "članci o nasilju, sistemskim propustima i prevenciji nasilja"
 show_posts: true
 filter_category: nasilje
 permalink: /kategorije/nasilje/
