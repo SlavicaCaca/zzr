@@ -2,7 +2,7 @@
 layout: grid-gallery
 title: "Prvi ginekološki pregled"
 title_image: /assets/images/title-logo.png  
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "digitalni prostor posvecen kvir aktivizmu i feminizmu"
 intro: "prvi ginekološki pregled - lična iskustva, strahovi i sistemski propusti"
 permalink: /projekti/prvi-ginekoloski-pregled/
 show_posts: false
