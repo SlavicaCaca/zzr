@@ -1,10 +1,10 @@
 ---
 layout: grid-gallery
-title: "Teorija"
+title: "Feministička teorija"
 subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
 intro: "Članci o feminističkoj teoriji i analizi"
 show_posts: true
-filter_category: teorija
-permalink: /kategorije/teorija/
+filter_category: feministicka-teorija
+permalink: /kategorije/feministicka-teorija/
 show_footer: true
 ---
