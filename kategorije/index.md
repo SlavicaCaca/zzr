@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: about-page
 title: "Sve kategorije"
 permalink: /kategorije/
 ---
