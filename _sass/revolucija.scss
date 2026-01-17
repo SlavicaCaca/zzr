@@ -499,6 +499,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .header-title h1 {
+    font-size: 1rem;
+  }
   .top-subtitle-bar {
     padding: 0.5rem 0.75rem;
     
@@ -591,6 +594,10 @@ body {
   .header-logo img,
   .header-logo svg {
     width: 2.5rem;
+  }
+
+  .header-title h1 {
+    font-size: 1rem;
   }
   
   .header-title img {
@@ -998,3 +1005,4 @@ body {
   color: #952F66;
   font-weight: 600;
 }
+
