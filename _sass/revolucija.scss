@@ -1010,3 +1010,36 @@ body {
 .page__meta {
   margin-bottom: 1rem;
 }
+// ============================================
+// TAXONOMY META - POPRAVKA PORAVNANJA
+// ============================================
+
+.page__taxonomy,
+.page__date {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  
+  strong {
+    color: white;
+    font-weight: 600;
+  }
+  
+  span[itemprop="keywords"] {
+    display: flex !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+    align-items: center !important;
+  }
+  
+  time {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+// Ukloni sep ako postoji
+.page__taxonomy .sep {
+  display: none !important;
+}
