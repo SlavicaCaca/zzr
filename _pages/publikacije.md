@@ -2,7 +2,7 @@
 layout: grid-gallery
 title: "Publikacije"
 title_image: /assets/images/title-logo.png  
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "digitalni prostor posvecen kvir aktivizmu i feminizmu"
 intro: "publikacije"
 permalink: /publikacije/
 show_posts: false
