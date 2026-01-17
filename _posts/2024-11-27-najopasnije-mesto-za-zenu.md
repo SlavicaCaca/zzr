@@ -2,7 +2,7 @@
 layout: single
 date: 2025-10-05
 author: "dajana"
-categories: [kvir-aktivizam, nasilje]
+categories: [kvir-aktivizam]
 author_profile: true
 header:
   teaser: /assets/images/dom.png
