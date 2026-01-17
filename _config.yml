@@ -239,17 +239,15 @@ jekyll-archives:
 categories:
   - name: "Feminizam i rod"
     slug: feminizam-i-rod
-  - name: "LGBTQ+ teme"
-    slug: lgbtq
-  - name: "Aktivizam i društvene promene"
-    slug: aktivizam
+  - name: "Kvir aktivizam"
+    slug: kvir-aktivizam
   - name: "Nasilje i sistemski problemi"
     slug: nasilje
   - name: "Društvo i kultura"
     slug: drustvo-kultura
   - name: "Zdravlje i telo"
     slug: zdravlje-telo
-  - name: "Teorija"
+  - name: "Feministicka teorija"
     slug: teorija
   - name: "Praktične teme"
     slug: prakticne-teme
