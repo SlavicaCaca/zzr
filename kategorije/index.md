@@ -7,7 +7,7 @@ permalink: /kategorije/
 <div class="category-grid">
   <div class="category-card">
     <h2><a href="{{ '/kategorije/feminizam-i-rod/' | relative_url }}">Feminizam i rod</a></h2>
-    <p>Feminizam, rodna ravnopravnost, ženska prava</p>
+    <p>Rodni identiteti, rodne uloge, rodna ravnopravnost, telesna autonomija i društvene norme</p>
   </div>
   
   <div class="category-card">
@@ -16,12 +16,12 @@ permalink: /kategorije/
 
   </div>  <div class="category-card">
     <h2><a href="{{ '/kategorije/femicid/' | relative_url }}">Femicid</a></h2>
-    <p>Femicid, rodno nasilje, pamćenje žrtava, borba za pravdu</p>
+    <p>Rodno motivisana ubistva žena, sistemski propusti i prevencija</p>
   </div>
 
   <div class="category-card">
     <h2><a href="{{ '/kategorije/nasilje/' | relative_url }}">Nasilje</a></h2>
-    <p>Rodno nasilje, sistemski problemi, prevencija</p>
+    <p>Rodno zasnovano nasilje, porodično nasilje, online nasilje, ekonomsko nasilje, psihičko nasilje, fizičko nasilje, institucionalno nasilje, mehanizmi prevencije i podrške u nasilju</p>
   </div>
   
   <div class="category-card">
@@ -36,7 +36,7 @@ permalink: /kategorije/
   
   <div class="category-card">
     <h2><a href="{{ '/kategorije/feministicka-teorija/' | relative_url }}">Feministička teorija</a></h2>
-    <p>Feministička teorija, kritička analiza, filozofija</p>
+    <p>Feministička teorija, kritička analiza, kritika patrijarhata i analiza moći</p>
   </div>
   
   <div class="category-card">
