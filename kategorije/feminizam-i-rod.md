@@ -1,7 +1,7 @@
 ---
 layout: grid-gallery
 title: "Feminizam i rod"
-subtitle: "digitalni prostor posvećen aktivističkim i feminističkim temama"
+subtitle: "digitalni prostor posvecen kvir aktivizmu i feminizmu"
 intro: "članci o feminizmu i rodnoj (ne)ravnopravnosti"
 show_posts: true
 filter_category: feminizam-i-rod
