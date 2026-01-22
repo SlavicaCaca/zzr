@@ -7,7 +7,7 @@ show_footer: true
 instagram_url: "https://instagram.com/zena.znaci.revolucija"
 
 # Call to Action tekst (pojavljuje se u roze kutiji na dnu white card-a)
-call_to_action: "Žena znači Revolucija! postoji kako bi podsetila da svaka priča, svako iskustvo, svaki glas i  otpor mogu biti početak jedne Revolucije!"
+call_to_action: "Žena znači Revolucija! postoji kako bi podsetila da svaka priča, svako iskustvo, svaki glas i  svaki otpor mogu biti početak jedne Revolucije!"
 
 # Team Members
 team_title: "članice inicijative"
