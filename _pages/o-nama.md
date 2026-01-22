@@ -33,4 +33,4 @@ team_members:
 
 Kroz tekstove, edukacije, javne razgovore i digitalne kampanje, ŽzR! se bavi temama rodne ravnopravnosti, borbe protiv rodno zasnovanog nasilja, mizoginije, seksizma i diskriminacije.
 
-Cilj inicijative je da osnaži glasove žena i marginalizovanih ljudi, da otvori pitanja društvene nepravde i gradi zajednicu koja veruje u solidarnost, znanje i feminističku promenu.
+Cilj inicijative je da osnaži glasove žena i marginalizovanih ljudi, da otvori pitanja društvene nepravde i da gradi zajednicu koja veruje u solidarnost, znanje i feminističku promenu.
