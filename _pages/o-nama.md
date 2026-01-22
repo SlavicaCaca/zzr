@@ -7,7 +7,7 @@ show_footer: true
 instagram_url: "https://instagram.com/zena.znaci.revolucija"
 
 # Call to Action tekst (pojavljuje se u roze kutiji na dnu white card-a)
-call_to_action: "Žena znači Revolucija! postoji kako bi podsetila da svaka priča, svako iskustvo i svaki otpor mogu biti početak promene!"
+call_to_action: "Žena znači Revolucija! postoji kako bi podsetila da svaka priča, svako iskustvo, svaki glas i  otpor mogu biti početak jedne Revolucije!"
 
 # Team Members
 team_title: "članice inicijative"
@@ -33,4 +33,4 @@ team_members:
 
 Kroz tekstove, edukacije, javne razgovore i digitalne kampanje, ŽzR! se bavi temama rodne ravnopravnosti, borbe protiv rodno zasnovanog nasilja, mizoginije, seksizma i diskriminacije.
 
-Cilj inicijative je da osnaži žene i marginalizovane glasove, otvara pitanja društvene nepravde i gradi zajednicu koja veruje u solidarnost, znanje i feminističku promenu.
+Cilj inicijative je da osnaži glasove žena i marginalizovanih ljudi, da otvari pitanja društvene nepravde i gradi zajednicu koja veruje u solidarnost, znanje i feminističku promenu.
