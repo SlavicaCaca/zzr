@@ -130,9 +130,15 @@
               <span class="post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
               
               <!-- Autor -->
-              {% if post.author %}
-              <span class="post-author">{{ post.author }}</span>
-              {% endif %}
+              {% if post.authors %}
+  <span class="post-author">
+    {% for a in post.authors %}
+      {{ a }}{% unless forloop.last %} i {% endunless %}
+    {% endfor %}
+  </span>
+{% elsif post.author %}
+  <span class="post-author">{{ post.author }}</span>
+{% endif %}
             </div>
             
             <!-- Kategorije/Tagovi -->
