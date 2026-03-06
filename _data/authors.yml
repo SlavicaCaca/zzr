@@ -12,3 +12,10 @@ mina:
   name: "Mina"
   bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
   avatar: "/assets/images/authors/mina.jpg"  
+
+  
+lena:
+  name: "Lena"
+  bio: "Maturantkinja Pete beogradske gimnazije, u slobodno vreme čita i piše pesme"
+  avatar: "/assets/images/authors/lena.jpg" 
+
