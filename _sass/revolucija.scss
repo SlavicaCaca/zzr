@@ -1075,3 +1075,10 @@ body {
 .page__taxonomy .sep {
   display: none !important;
 }
+
+.page__content + .pagination,
+.page__meta + .pagination,
+.page__share + .pagination,
+.page__comments + .pagination {
+  border-top: none;
+}
