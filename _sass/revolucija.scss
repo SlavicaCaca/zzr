@@ -1132,3 +1132,10 @@ body {
     float: none !important;
   }
 }
+
+@media (min-width: 64em) {
+  .page__related .grid__item {
+    width: 48.9795918367% !important;
+    float: inline-start !important;
+  }
+}
