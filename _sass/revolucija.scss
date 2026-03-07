@@ -1086,3 +1086,9 @@ body {
 .pagination--pager {
   border-color: #fff !important;
 }
+
+@media (max-width: 768px) {
+  .h-card + .h-card {
+    margin-top: 0.5rem;
+  }
+}
