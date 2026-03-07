@@ -1120,3 +1120,9 @@ body {
 .page__related .archive__item {
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .page__related .archive__item-teaser {
+    height: 250px;
+  }
+}
