@@ -486,6 +486,7 @@ body {
   
   .grid-item {
     border-radius: 30px;
+    width: 100%;
   }
   
   .mobile-nav {
@@ -545,6 +546,7 @@ body {
   
   .grid-item {
     border-radius: 25px;
+    width: 100%;
   }
   
   .post-title {
@@ -619,6 +621,9 @@ body {
   }
   .page__related {
     padding: 1em;
+  }
+  .grid-item {
+    width: 100%;
   }
 }
 
