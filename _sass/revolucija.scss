@@ -486,7 +486,6 @@ body {
   
   .grid-item {
     border-radius: 30px;
-    width: 100%;
   }
   
   .mobile-nav {
@@ -546,7 +545,6 @@ body {
   
   .grid-item {
     border-radius: 25px;
-    width: 100%;
   }
   
   .post-title {
@@ -621,9 +619,6 @@ body {
   }
   .page__related {
     padding: 1em;
-  }
-  .grid-item {
-    width: 100%;
   }
 }
 
@@ -1095,17 +1090,6 @@ body {
 @media (max-width: 768px) {
   .h-card + .h-card {
     margin-top: 0.5rem;
-  }
-}
-
-.page__related .archive__item-teaser {
-  height: 280px;
-  max-height: 280px;
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
 
