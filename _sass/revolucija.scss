@@ -1121,13 +1121,4 @@ body {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .page__related .archive__item-teaser {
-    height: 250px;
-    img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  }
-}
+
