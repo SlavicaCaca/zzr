@@ -1126,4 +1126,9 @@ body {
   position: relative;
 }
 
-
+@media (min-width: 37.5em) {
+  .page__related .grid__item {
+    width: 100% !important;
+    float: none !important;
+  }
+}
