@@ -269,6 +269,11 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   aspect-ratio: auto;
+  img {
+    width: 100%;
+    height: auto;      // ← promeni iz 100% u auto
+    object-fit: cover; // ← možeš i ukloniti ako koristiš height: auto
+  }
   display: block;
   text-decoration: none;
   color: inherit;
