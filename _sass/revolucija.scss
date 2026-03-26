@@ -1132,7 +1132,22 @@ body {
     }
   }
 
+  .archive__item {
+    position: relative !important;
+  }
+
   .archive__item-title {
-    display: none !important; // ← sakrij titl
+    position: absolute !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    z-index: 10 !important;
+    
+    a {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      opacity: 0 !important;
+      font-size: 0 !important;
+    }
   }
 }
