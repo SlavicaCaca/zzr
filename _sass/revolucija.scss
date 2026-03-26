@@ -268,12 +268,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  aspect-ratio: auto;
-  img {
-    width: 100%;
-    height: auto;      // ← promeni iz 100% u auto
-    object-fit: cover; // ← možeš i ukloniti ako koristiš height: auto
-  }
+  aspect-ratio: 3/4;
   display: block;
   text-decoration: none;
   color: inherit;
@@ -1138,5 +1133,29 @@ body {
   .page__related .grid__item {
     width: 48.9795918367% !important;
     float: inline-start !important;
+  }
+}
+
+
+.grid__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+  float: none !important;
+}
+
+.grid__item {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+  
+  .archive__item-teaser {
+    aspect-ratio: auto !important;
+    
+    img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+    }
   }
 }
