@@ -22,7 +22,7 @@ Tri decenije kasnije, „Linda’s Story of Menstruation” (1974) tematizuje me
 
 Pored Disney edukativnih filmova, postoje i eksperimentalni i umetnički filmovi koji su se bavili menstruacijom, poput kratkog filma „Menses” (1973), Barbara Hammer ili radova poput „Period. End of Sentence.“ (2018) dokumentarca koji prati borbu za menstrualnu higijenu u ruralnim zajednicama u Indiji. Ovi filmovi često ne pokazuju menstruaciju direktno, ali je tematizuju kroz iskustvo i simboliku, što nam omogućava da je razumemo kao društveni i telesni fenomen.
 
-Rubi Kapur je izazvala kontroverzu kada je objavila sliku krvave trenerke na krevetu. Instagram je uklonio njenu fotografiju, pokazujući da se vizuelna prezentacija krvi i dalje provocira i kontroliše u javnom prostoru.
+rupi kapur je izazvala kontroverzu kada je objavila sliku krvave trenerke na krevetu. Instagram je uklonio njenu fotografiju, pokazujući da se vizuelna prezentacija krvi i dalje provocira i kontroliše u javnom prostoru.
 
 Kao što Adriana Zaharijević piše u svom radu PHILOSOPHY OF MENSTRUATION: THE BODY THAT IS NOT BODILESS, menstruacija se u filozofskom i kulturnom diskursu često prisutna kroz priču i simbol, ali je vizuelno i direktno iskustvo gotovo uvek izostavljeno.
 
