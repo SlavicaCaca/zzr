@@ -1141,3 +1141,26 @@ body {
   }
 }
 
+
+.page__related {
+  .grid__wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+    float: none !important;
+  }
+
+  .grid__item {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+
+    .archive__item-teaser {
+      img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+      }
+    }
+  }
+}
