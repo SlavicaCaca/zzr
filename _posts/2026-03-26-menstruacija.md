@@ -1,7 +1,7 @@
 ---
 layout: single
 date: 2026-03-26
-categories: zdravlje-telo
+categories: zdravlje-i-telo
 authors: 
 - val
 author_profile: true
