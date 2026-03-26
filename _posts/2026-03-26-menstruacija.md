@@ -30,10 +30,9 @@ Menstruacija je prisutna kroz priču, ali ne kroz vidljivost. Ona oblikuje subje
 
 Zaharijević ističe da je upravo menstruacija ono što stoji na putu konceptualizacije tela kao bez-telesnog, jer pokazuje da ne postoji univerzalno neutralno ljudsko telo.
 
-<a href="https://aseestant.ceon.rs/index.php/pravzap/article/view/58286">https://aseestant.ceon.rs/index.php/pravzap/article/view/58286</a>
-
 Literatura:
-[Adriana Zaharijević. “Philosophy of Menstruation: The Body That Is Not Bodiless.” Pravni zapisi 16, br. 1 (2025).](https://doi.org/10.5937/pravzap16-58286)
+
+Adriana Zaharijević. [“Philosophy of Menstruation: The Body That Is Not Bodiless.”](https://doi.org/10.5937/pravzap16-58286) Pravni zapisi 16, br. 1 (2025).
 
 
 
