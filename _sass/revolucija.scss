@@ -1139,13 +1139,4 @@ body {
   float: none !important;
   margin: 0 !important;
   
-  .archive__item-teaser {
-    aspect-ratio: auto !important;
-    
-    img {
-      width: 100% !important;
-      height: auto !important;
-      object-fit: cover !important;
-    }
-  }
 }
