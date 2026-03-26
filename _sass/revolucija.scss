@@ -1150,12 +1150,9 @@ body {
       font-size: 0 !important;
     }
   }
-
-  @media (max-width: 768px) {
-  .page__related {
-    .grid__wrapper {
-      grid-template-columns: repeat(1, 1fr) !important;
-    }
-  }
 }
+@media (max-width: 768px) {
+  .page__related .grid__wrapper {
+    grid-template-columns: 1fr !important;
+  }
 }
