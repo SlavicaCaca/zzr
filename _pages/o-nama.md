@@ -27,8 +27,6 @@ team_members:
   - name: "Slavica"
     image: "/assets/images/authors/slavica.jpg"
     bio: ""
-
-  - name: "len"
 ---
 
 <span class="highlight-text">Žena znači Revolucija!</span> je neformalna feministička inicijativa posvećena stvaranju prostora u kojem se govori o temama o kojima se ne govori dovoljno.
