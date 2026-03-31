@@ -4,8 +4,8 @@ dajana:
   avatar: "/assets/images/authors/dajana.jpg"
 
 val:
-  name: "Val"
-  bio: "Apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
+  name: "val"
+  bio: "apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
   avatar: "/assets/images/authors/val.jpg"
 
 mina:
@@ -15,7 +15,6 @@ mina:
 
   
 lena:
-  name: "Lena"
-  bio: "Maturantkinja Pete beogradske gimnazije, u slobodno vreme čita i piše pesme"
-  avatar: "/assets/images/authors/lena.jpg" 
+  name: "len"
+
 
