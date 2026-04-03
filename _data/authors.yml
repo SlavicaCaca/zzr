@@ -1,6 +1,6 @@
 dajana:
-  name: "Dajana"
-  bio: "Dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
+  name: "dajana"
+  bio: "dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
   avatar: "/assets/images/authors/dajana.jpg"
 
 val:
@@ -9,8 +9,8 @@ val:
   avatar: "/assets/images/authors/val.jpg"
 
 mina:
-  name: "Mina"
-  bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
+  name: "mina"
+  bio: "volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
   avatar: "/assets/images/authors/mina.jpg"  
 
   
