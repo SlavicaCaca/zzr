@@ -12,19 +12,19 @@ call_to_action: "Žena znači Revolucija! postoji kako bi podsetila da svaka pri
 # Team Members
 team_title: "članice inicijative"
 team_members:
-  - name: "Dajana"
+  - name: "dajana"
     image: "/assets/images/authors/dajana.jpg"
-    bio: "Dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
+    bio: "dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
   
   - name: "valentina"
     image: "/assets/images/authors/val.jpg"
     bio: "apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
   
-  - name: "Mina"
+  - name: "mina"
     image: "/assets/images/authors/mina.jpg"
-    bio: "Volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
+    bio: "volonterka Crvenog krsta, članica organizacije 'Irida' i studentkinja medicine."
   
-  - name: "Slavica"
+  - name: "slavica"
     image: "/assets/images/authors/slavica.jpg"
     bio: ""
   - name: "len"
