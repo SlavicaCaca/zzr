@@ -16,9 +16,9 @@ team_members:
     image: "/assets/images/authors/dajana.jpg"
     bio: "Dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
   
-  - name: "Valentina"
+  - name: "valentina"
     image: "/assets/images/authors/val.jpg"
-    bio: "Apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
+    bio: "apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
   
   - name: "Mina"
     image: "/assets/images/authors/mina.jpg"
@@ -26,6 +26,9 @@ team_members:
   
   - name: "Slavica"
     image: "/assets/images/authors/slavica.jpg"
+    bio: ""
+  - name: "len"
+    image: "/assets/images/authors/len.jpeg"
     bio: ""
 ---
 
