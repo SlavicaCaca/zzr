@@ -14,7 +14,8 @@ mina:
   avatar: "/assets/images/authors/mina.jpg"  
 
   
-lena:
+len:
   name: "len"
+  avatar: "/assets/images/authors/len.jpeg" 
 
 
