@@ -16,7 +16,7 @@ team_members:
     image: "/assets/images/authors/dajana.jpg"
     bio: "dugogodišnja kvir aktivistkinja i feministkinja, studentkinja UI/UX dizajna i osnivačica neformalne inicijative Žena znači Revolucija!"
   
-  - name: "valentina"
+  - name: "val"
     image: "/assets/images/authors/val.jpg"
     bio: "apsolventkinja dramaturgije, kroz rad na predstavi istraživala je stanje u ginekološkim ordinacijama i porodilištima"
   
