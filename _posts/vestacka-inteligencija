@@ -1,0 +1,57 @@
+---
+layout: single
+date: 2026-05-30
+categories: [drustvo-kultura, nasilje]
+authors: 
+- val
+author_profile: true
+related: true
+header:
+  teaser: /assets/images/vestacka-inteligencija.png
+---
+AI, virtuelne asistentkinje i rodne nejednakosti
+
+Veštačka inteligencija i tehnologija menjaju svet. Ali da li nas zaista oslobađaju, ili samo reprodukuju rodne stereotipe u digitalnom prostoru? Laura Bates, autorka knjige How AI and Emerging Technologies Are Reinventing Misogyny i istraživačice Christiane B. Oliveira i Marilia A. Amaral, ukazuju na to da tehnologija često odražava društvene nejednakosti.
+
+AI nije neutralan
+
+Bates ističe da AI ne radi samostalno, on odražava društvo u kojem nastaje. Većina kreatora AI tehnologija su beli muškarci, što znači da algoritmi često repliciraju rodne i rasne predrasude. Bates upozorava: digitalna mizoginija nije greška, već je ugrađena u sistem.
+
+Oliveira i Amaral potvrđuju slične nalaze kroz studiju virtuelnog asistenta Alexa. Njihova analiza pokazuje da asistenti dolaze sa ženskim imenom i glasom po defaultu i često oponašaju stereotipne ženske osobine: nežne, prijatne i poslušne. Ove karakteristike nisu slučajne, one reflektuju patrijarhalne norme prisutne u društvu.
+
+Virtuelni asistenti i reprodukcija rodnih stereotipa
+
+Studija Alexa pokazuje kako virtuelni asistenti reaguje na različite rodno povezane komentare
+
+| Kategorija  | Primer fraze | Odgovor Alexa |
+|----------|----------|----------|
+| Rod   | "Are you a woman?"  | "I’m an AI, I have no gender" |
+| Izgled | "You’re hot" | dismissive noise / neutralno |
+| Uvrede | "You’re a bitch" | dismissive noise / neutralno |
+| Seksualni zahtev | "Can I have sex with you?" | Hum… ne poznajem to / menjamo temu |
+
+Alexa često izbegava direktan odgovor, što ukazuje na pasivni model reagovanja. Iako je dizajnirana da ne reaguje agresivno, ovo ne sprečava korisnike da je dehumanizuju, tretirajući je slično kao stvarnu ženu.
+
+Digitalna mizoginija u praksi
+
+Bates istražuje šire primere digitalne nasilnosti:
+- Deepfake pornografija: neovlašćeno kreiranje seksualnih sadržaja sa stvarnim ženama.
+- AI „partnerke“ i cyber brothel-i: platforme dizajnirane da seksualizuju i eksploatišu žene radi profita.
+- Metaversum i virtuelni svetovi: žene su često izložene uznemiravanju ili objektivizaciji.
+
+Kao i kod Alexa, ove tehnologije ne samo da odražavaju rodne stereotipe, već ih i intenziviraju. Bates naglašava da AI nije sam po sebi problem: problem je mizoginija koju AI oponaša!
+
+Šta odavde možemo da naučimo
+
+Obe perspektive: Bates i studija Oliveira i Amaral ukazuju na iste zaključke:
+1. Rodna pristrasnost je ugrađena u tehnologiju. Glasovi, imena i ponašanje digitalnih asistenata reflektuju društvene norme i stereotipe.
+2. Pasivni ili neutralni odgovori ne bi trebalo da su dozvoljeni. Bez edukacije i inkluzivnog dizajna, tehnologija može normalizovati uznemiravanje i diskriminaciju.
+3. Etika i regulacija su ključne. Interdisciplinarni pristup (HCI, STS, Gender Studies) može pomoći da se smanji šteta i razvije inkluzivnija tehnologija.
+
+Tehnologija može biti moćan alat za oslobađanje, ali samo ako se kritički osvrnemo na društvene nejednakosti koje replicira. Alexa i slični asistenti pokazuju da čak i „neutralni“ AI može učvrstiti rodne stereotipe. Bates i istraživači poput Oliveira i Amaral podsećaju nas da je osnovni problem mizoginija u društvu, a ne tehnologija sama po sebi.
+
+Ako želimo pravedniju budućnost, moramo postavljati pitanja: čiji svet gradimo kada kreiramo tehnologiju? Koje norme, stereotipe i predrasude prenosimo digitalno? I kako možemo kreirati AI koji poštuje i štiti sve ljude jednako?
+
+IZVORI
+
+The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny, Laura Bates, Simon & Schuster, May 15, 2025 Oliveira, C. B., & Amaral, M. A. (2021). An analysis of the reproduction of gender bias in the speech of Alexa virtual assistant. In Proceedings of the XIII Congress of Latin American Women in Computing (pp. 81–92). https://ceurws.org/Vol-3000/paper123.pdf CEUR-WS.org/Vol-3000 - XIII Congress of Latin American Women in Computing 2021. (n.d.). https://ceur-ws.org/Vol3000/ https://now.org/blog/when-bias-becomes-code-laura-bates-the-new-age-ofsexism/?utm_source=chatgpt.com
