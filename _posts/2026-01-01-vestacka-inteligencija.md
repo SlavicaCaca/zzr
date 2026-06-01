@@ -1,6 +1,6 @@
 ---
 layout: single
-date: 2026-05-30
+date: 2026-01-01
 categories: [drustvo-kultura, nasilje]
 authors: 
 - val
