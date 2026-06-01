@@ -13,13 +13,13 @@ AI, virtuelne asistentkinje i rodne nejednakosti
 
 Veštačka inteligencija i tehnologija menjaju svet. Ali da li nas zaista oslobađaju, ili samo reprodukuju rodne stereotipe u digitalnom prostoru? Laura Bates, autorka knjige How AI and Emerging Technologies Are Reinventing Misogyny i istraživačice Christiane B. Oliveira i Marilia A. Amaral, ukazuju na to da tehnologija često odražava društvene nejednakosti.
 
-AI nije neutralan
+<span class="highlight-text">AI nije neutralan<span>
 
 Bates ističe da AI ne radi samostalno, on odražava društvo u kojem nastaje. Većina kreatora AI tehnologija su beli muškarci, što znači da algoritmi često repliciraju rodne i rasne predrasude. Bates upozorava: digitalna mizoginija nije greška, već je ugrađena u sistem.
 
 Oliveira i Amaral potvrđuju slične nalaze kroz studiju virtuelnog asistenta Alexa. Njihova analiza pokazuje da asistenti dolaze sa ženskim imenom i glasom po defaultu i često oponašaju stereotipne ženske osobine: nežne, prijatne i poslušne. Ove karakteristike nisu slučajne, one reflektuju patrijarhalne norme prisutne u društvu.
 
-Virtuelni asistenti i reprodukcija rodnih stereotipa
+<span class="highlight-text">Virtuelni asistenti i reprodukcija rodnih stereotipa<span>
 
 Studija Alexa pokazuje kako virtuelni asistenti reaguje na različite rodno povezane komentare
 
@@ -32,7 +32,7 @@ Studija Alexa pokazuje kako virtuelni asistenti reaguje na različite rodno pove
 
 Alexa često izbegava direktan odgovor, što ukazuje na pasivni model reagovanja. Iako je dizajnirana da ne reaguje agresivno, ovo ne sprečava korisnike da je dehumanizuju, tretirajući je slično kao stvarnu ženu.
 
-Digitalna mizoginija u praksi
+<span class="highlight-text">Digitalna mizoginija u praksi<span>
 
 Bates istražuje šire primere digitalne nasilnosti:
 - Deepfake pornografija: neovlašćeno kreiranje seksualnih sadržaja sa stvarnim ženama.
@@ -41,7 +41,7 @@ Bates istražuje šire primere digitalne nasilnosti:
 
 Kao i kod Alexa, ove tehnologije ne samo da odražavaju rodne stereotipe, već ih i intenziviraju. Bates naglašava da AI nije sam po sebi problem: problem je mizoginija koju AI oponaša!
 
-Šta odavde možemo da naučimo
+<span class="highlight-text">Šta odavde možemo da naučimo<span>
 
 Obe perspektive: Bates i studija Oliveira i Amaral ukazuju na iste zaključke:
 1. Rodna pristrasnost je ugrađena u tehnologiju. Glasovi, imena i ponašanje digitalnih asistenata reflektuju društvene norme i stereotipe.
@@ -54,4 +54,6 @@ Ako želimo pravedniju budućnost, moramo postavljati pitanja: čiji svet gradim
 
 IZVORI
 
-The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny, Laura Bates, Simon & Schuster, May 15, 2025 Oliveira, C. B., & Amaral, M. A. (2021). An analysis of the reproduction of gender bias in the speech of Alexa virtual assistant. In Proceedings of the XIII Congress of Latin American Women in Computing (pp. 81–92). https://ceurws.org/Vol-3000/paper123.pdf CEUR-WS.org/Vol-3000 - XIII Congress of Latin American Women in Computing 2021. (n.d.). https://ceur-ws.org/Vol3000/ https://now.org/blog/when-bias-becomes-code-laura-bates-the-new-age-ofsexism/?utm_source=chatgpt.com
+The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny, Laura Bates, Simon & Schuster, May 15, 2025 Oliveira, C. B., & Amaral, M. A. (2021). An analysis of the reproduction of gender bias in the speech of Alexa virtual assistant. In Proceedings of the XIII Congress of Latin American Women in Computing (pp. 81–92). 
+https://ceurws.org/Vol-3000/paper123.pdf CEUR-WS.org/Vol-3000 - XIII Congress of Latin American Women in Computing 2021. (n.d.). https://ceur-ws.org/Vol3000/ 
+https://now.org/blog/when-bias-becomes-code-laura-bates-the-new-age-ofsexism/?utm_source=chatgpt.com
