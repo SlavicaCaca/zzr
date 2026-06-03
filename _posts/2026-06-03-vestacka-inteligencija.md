@@ -53,6 +53,6 @@ Tehnologija može biti moćan alat za oslobađanje, ali samo ako se kritički os
 Ako želimo pravedniju budućnost, moramo postavljati pitanja: čiji svet gradimo kada kreiramo tehnologiju? Koje norme, stereotipe i predrasude prenosimo digitalno? I kako možemo kreirati AI koji poštuje i štiti sve ljude jednako?
 
 Izvori:  
-<span style="font-size: 20px;">The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny, Laura Bates, Simon & Schuster, May 15, 2025 Oliveira, C. B., & Amaral, M. A. (2021). An analysis of the reproduction of gender bias in the speech of Alexa virtual assistant. In Proceedings of the XIII Congress of Latin American Women in Computing (pp. 81–92).   
+<span style="font-size: 1vw;">The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny, Laura Bates, Simon & Schuster, May 15, 2025 Oliveira, C. B., & Amaral, M. A. (2021). An analysis of the reproduction of gender bias in the speech of Alexa virtual assistant. In Proceedings of the XIII Congress of Latin American Women in Computing (pp. 81–92).   
 https://ceurws.org/Vol-3000/paper123.pdf CEUR-WS.org/Vol-3000 - XIII Congress of Latin American Women in Computing 2021. (n.d.). https://ceur-ws.org/Vol3000/   
 https://now.org/blog/when-bias-becomes-code-laura-bates-the-new-age-ofsexism/?utm_source=chatgpt.com<span>
