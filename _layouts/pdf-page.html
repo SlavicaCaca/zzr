@@ -26,12 +26,12 @@
             <a href="{{ page.pdf_file | relative_url }}" 
                class="btn-download" 
                download>
-              📥 Preuzmi PDF
+              📥 {{ page.download_label | default: "Preuzmi PDF" }}
             </a>
             <a href="{{ page.pdf_file | relative_url }}" 
                class="btn-open" 
                target="_blank">
-              👁️ Otvori u novom tabu
+              👁️ {{ page.open_label | default: "Otvori u novom tabu" }}
             </a>
           </div>
           
@@ -50,17 +50,17 @@
             <!-- Mobile: fallback poruka -->
             <div class="pdf-mobile">
               <div class="mobile-message">
-                <p>📱 <strong>Mobilni prikaz PDF-a nije dostupan</strong></p>
-                <p>Molimo te koristi jednu od sledećih opcija:</p>
+                <p>📱 <strong>{{ page.mobile_unavailable_label | default: "Mobilni prikaz PDF-a nije dostupan" }}</strong></p>
+<p>{{ page.mobile_options_label | default: "Molimo te koristi jednu od sledećih opcija:" }}</p>
                 <a href="{{ page.pdf_file | relative_url }}" 
                    class="btn-download-mobile" 
                    download>
-                  📥 Preuzmi PDF
+                  📥 {{ page.download_label | default: "Preuzmi PDF" }}
                 </a>
                 <a href="{{ page.pdf_file | relative_url }}" 
                    class="btn-open-mobile" 
                    target="_blank">
-                  👁️ Otvori u browseru
+                  👁️ {{ page.open_label | default: "Otvori u browseru" }}
                 </a>
               </div>
             </div>
