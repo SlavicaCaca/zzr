@@ -13,7 +13,7 @@ gallery_items:
     link: /publikacije/prirucnik/
     title: "Priručnik za bezbedan (prvi) ginekološki pregled za sve mlade"
     show_overlay: true
-  - image: /assets/images/pdf.png  # Slika preview-a
+  - image: /assets/images/guide.png  # Slika preview-a
     link: /publikacije/guide/
     title: "A guide to the (first) gynecological exam for all young people"
     show_overlay: true
