@@ -6,4 +6,6 @@ intro: "A guide to the (first) gynecological exam"
 permalink: /publikacije/guide/
 pdf_file: /assets/pdfs/guide.pdf
 show_footer: true
+download_label: "Download PDF"
+open_label: "Open in new tab"
 ---
