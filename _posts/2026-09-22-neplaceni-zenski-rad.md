@@ -25,10 +25,11 @@ Način na koji, ponovo, kapitalizam održava normu nepriznavanja domaćeg rada j
 
 Neplaćeni ženski rad kapitalizmu služi kao samo još jedan način da kontroliše društvo, zato za oslobođenje i besklasno društvo: smrt kapitalizmu!
 
-<div style="font-size: 0.8em;">
-  Izvori:  
-- Silvia Federicci, Kaliban i veštica, https://anarhisticka-biblioteka.net/library/silvia-federici-kaliban-i-vestica.pdf, 54–55 str.
-- https://marxist.com/housework-domestic-labour.htm
-- Margaret Benson, The political economy of womens liberation, https://sci-hub.box/storage/2024/7057/dae3bcf2def8b48c1b9aed1e49648b75/benston1969.pdf, 20. strana
-- https://oxfamilibrary.openrepository.com/bitstream/handle/10546/620928/bp-time-to-care-inequality-200120-en.pdf
+<div style="font-size: 0.8em;">Izvori:  
+  <ul style="font-size: 0.8em;">
+    <li>Silvia Federicci, Kaliban i veštica, https://anarhisticka-biblioteka.net/library/silvia-federici-kaliban-i-vestica.pdf, 54–55 str.</li>
+    <li>[https://marxist.com/housework-domestic-labour.htm](https://marxist.com/housework-domestic-labour.htm)</li>
+    <li>Margaret Benson, The political economy of womens liberation, https://sci-hub.box/storage/2024/7057/dae3bcf2def8b48c1b9aed1e49648b75/benston1969.pdf, 20. strana</li>
+    <li>https://oxfamilibrary.openrepository.com/bitstream/handle/10546/620928/bp-time-to-care-inequality-200120-en.pdf</li>
+  </ul>
 </div>
